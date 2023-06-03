@@ -108,8 +108,20 @@ pre > code {
 /* END styles for typography page */
 
 /* style for photo filter page */
-#compoPagePhotoFilters img {
-    height: 150px;
+#compoPagePhotoFilters .item {
+    padding: .1em;
+}
+
+#compoPagePhotoFilters code {
+    font-size: .7rem;
+}
+
+#compoPagePhotoFilters img{
+  margin: auto;
+    height: 115px;
+}
+figcaption {
+    text-align: center;
 }
 /* END styles for typography page */
 
