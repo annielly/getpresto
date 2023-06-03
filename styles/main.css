@@ -9,7 +9,9 @@ header {
     margin-top: 100px;
     height: 200px;
 }
-
+h2.h2, h3.h3 {
+    margin-top: 0;
+}
 .navbar_logo a {
     font-size: 3.75rem;
 }
