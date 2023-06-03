@@ -93,7 +93,15 @@ pre > code {
 /* END styles for sample code area */
 
 /* styles for typography page */
-.inlineText p, .buttons p {
+button.btnXS, button.btnS, button.btnNormal, button.btnL, input.btnReset, input.btnSubmit, button.btnDropShadow {
+    margin: .5em .5em 0 0;
+  
+}
+.buttons p {
+    padding: .5em;
+    line-height: 2em;
+}
+.inlineText p {
     padding: .5em;
     text-align: left;
 }
