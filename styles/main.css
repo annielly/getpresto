@@ -1,0 +1,146 @@
+/********* custom CSS for the Presto! website ********/
+
+/********* global styles ***********/
+h1 {
+    font-size: 2.5rem;
+}
+/********* <header> elements ***********/
+header {
+    margin-top: 100px;
+    height: 200px;
+}
+
+.navbar_logo a {
+    font-size: 3.75rem;
+}
+
+.navbar_icons i, .navbar_toggleBtn i {
+    font-size: 2rem;
+}
+
+.navbar_toggleBtn {
+    margin-top: 20px;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+header span.brand {
+    font-size: 3.75rem;
+}
+
+header h1 {
+    padding: 50px 0 50px;
+}
+
+/********* <main> elements ***********/
+h2, h3 {
+    margin-top: 2rem;
+}
+
+span.brand {
+    font-size: 2rem;
+}
+
+.spanSM {
+    font-size: 1.2rem;
+}
+
+/** for grid items **/
+.container {
+    gap: 50px;
+}
+
+.item {
+    background-color: white;
+}
+
+.stylings {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px gray;
+    width: 95%;
+}
+/** END for grid items **/
+
+/* for links on the same page (put this class into the element you want to link to) */
+.linkAnchor {
+    padding-top: 140px;
+    margin-top: -120px;
+}
+/* END for links on the same page*/
+
+/* styles for sample code area */
+pre {
+    border: 1px solid rgba(169, 169, 169);
+    background-color: white;
+    width: 80%;
+    padding: 1rem;
+    margin-top: 2rem;
+    white-space: pre-wrap;
+}
+
+pre > code {
+    background-color: white;
+    font-size: .8rem;
+}
+/* END styles for sample code area */
+
+/* styles for typography page */
+.inlineText p, .buttons p {
+    padding: .5em;
+    text-align: left;
+}
+
+.typography, .buttons {
+    text-align: left;
+    padding-left: 2em;
+    padding-top: 2em;
+}
+
+.typography header {
+    text-align: center;
+}
+/* END styles for typography page */
+
+/* style for photo filter page */
+#compoPagePhotoFilters img {
+    height: 150px;
+}
+/* END styles for typography page */
+
+/********* <aside> elements ***********/
+aside {
+    text-align: center;
+}
+
+aside div.asideInner {
+    position: sticky;
+    top: 100px;
+}
+
+aside ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+aside li {
+    padding: 1em 0;
+}
+
+/********* <footer> elements ***********/
+.bodyGrid footer {
+    padding-top: 50px;
+}
+
+/********* media query ***********/
+@media screen and (min-width: 768px) {
+    .navbar {
+        align-items: center;
+        font-size: 1.2rem;
+    }
+}

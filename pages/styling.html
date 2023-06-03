@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone+Bounce&family=Josefin+Sans&family=Josefin+Slab&family=Limelight&family=Lora&family=Megrim&family=Monsieur+La+Doulaise&family=Nunito&family=Open+Sans&family=Playfair+Display&family=Rock+Salt&family=Sacramento&family=Shrikhand&family=Slackey&family=Special+Elite&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+
+    <title>Stylings | Presto!</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    
+</head>
+<body class="p7BG nunito">
+    <div class="bodyGrid asideL">
+        <header class="nunito p7BG">
+            <nav class="navbar p7BG">
+                <div class="navbar_logo">
+                    <!--LOGO IMAGE-->
+                    <a class="sacramento b7" href="../index.html">Presto!</a>
+                </div>
+                <ul class="navbar_menu">
+                    <li><a class="b5 nunito" href="../index.html">Home</a></li>
+                    <li><a class="b5 nuntio" href="#">Stylings</a></li>
+                    <li><a class="b5 nunito" href="components.html">Components</a></li>
+                    <li><a class="b5 nunito" href="demo.html">Demo Sites</a></li>
+                </ul>
+                <ul class="navbar_icons">
+                    <li><a href="#"><i class="fa-brands fa-facebook b7"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram b7"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin b7"></i></a></li> 
+                    <li><a href="#"><i class="fa-brands fa-youtube b7"></i></a></li>
+                </ul>
+                <!--HAMBURGER ICON-->
+                <a href="#" class="navbar_toggleBtn">
+                    <i class="fa-solid fa-bars b7"></i>
+                </a>
+            </nav>
+        <h1 class="p8">Stylings</h1>
+        </header>
+        <main>
+            <div class="container width100">
+                <section class="item spanAll stylings">
+                    <h2 class="bold p8 linkAnchor" id = "linkToGrid">Grid</h2>
+                    <p>We have 2 types of grid layouts. One is a grid layout for an entire page and the other is a grid container you can use everywhere you want.</p>
+                    <h3 class="bold p8">Grid for an entire page</h3>
+                    <p>This grid layout places <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;aside&gt;</code>, and <code>&lt;footer&gt;</code> automatically. To use this grid layout, you wrap your <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;aside&gt;</code>, and <code>&lt;footer&gt;</code> inside <code>&lt;div&gt;</code> with <code>class = “bodyGrid”.</code></p>
+                    <p>Option:<br>By default, <code>&lt;aside&gt;</code> is placed on the right of the page. If you want <code>&lt;aside&gt;</code> to be on the right, add class = “asideL” into <code>&lt;div class = “bodyGrid”&gt;</code>. If you don't have <code>&lt;aside&gt;</code>, add <code>class = “noAside”</code> into <code>&lt;div class = “bodyGrid”&gt;</code>.</p>
+                    <h3 class="bold p8">Grid container</h3>
+                    <p>This container has 1 to 6 columns that change responsively. To use this grid container, put <code>class = “item”</code> into child elements, like <code>&lt;div class = “item”&gt;</code> a grid item, and wrap it with <code>&lt;div class="container"&gt;</code>. </p>
+                    <p>Option:<br> By default, the max width of this grid container is 1000px. To make the width 100%, add class = “width100” into <code>&lt;div class="container"&gt;</code>.</p>
+                    <p>Option:<br> By default, <code>&lt;div class = “item”&gt;</code> is placed in 1 column and 1 row (does not span). To span grid items, add additional classes into <code>&lt;div class = “item”&gt;</code>. See details below.</p>
+                    <table class="stripedTable">
+                        <tr>
+                            <th></th>
+                            <th>Small screen</th>
+                            <th>Middle screen<br>(+600px)</th>
+                            <th>Large screen<br>(+900px)</th>
+                            <th>XLarge screen<br>(+1200px)</th>
+                        </tr>
+                        <tr>
+                            <td>default</td>
+                            <td>1 column</td>
+                            <td>3 columns</td>
+                            <td>4 columns</td>
+                            <td>6 columns</td>
+                        </tr>
+                        <tr>
+                            <td>Span all columns</td>
+                            <td>-</td>
+                            <td>.spanAll</td>
+                            <td>.spanAll</td>
+                            <td>.spanAll</td>
+                        </tr>            
+                        <tr>
+                            <td>Span 2 columns</td>
+                            <td>-</td>
+                            <td>.spanLeft2SM
+                                <br>.spanRight2SM
+                            </td>
+                            <td>.spanLeft2MD
+                                <br>.spanCenter2MD
+                                <br>.spanRight2MD
+                            </td>
+                            <td>.spanLeft2LG
+                                <br>.spanCenter2LG
+                                <br>.spanRight2LG
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Span 3 columns</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>.spanLeft3MD
+                                <br>.spanRight3MD
+                            </td>
+                            <td>.spanLeft3LG
+                                <br>.spanRight3LG
+                            </td>
+                        </tr>
+                    </table>
+                    <h3 class="bold p8">Example</h3>
+                    <pre>
+<code>&lt;body&gt;
+    &lt;div class=&quot;bodyGrid asideL&quot;&gt;
+        &lt;header&gt;&lt;/header&gt;
+        &lt;main&gt;
+            &lt;div class=&quot;container&quot;&gt;
+                &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
+                &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
+                &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
+                &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
+                &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
+                &lt;div class=&quot;item&quot;&gt;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/main&gt;
+        &lt;aside&gt;&lt;/aside&gt;
+        &lt;footer&gt;&lt;/footer&gt;
+    &lt;/div&gt;
+&lt;/body&gt;</code>
+                    </pre>
+                </section>
+                <section class="item spanAll stylings">
+                    <h2 class="nunito p8 linkAnchor" id = "linkToNav">Navigation</h2>
+                    <h3 class="bold p8">Subheadings</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo modi dignissimos quaerat aut, placeat officiis cupiditate vel voluptatem, ipsum magnam accusantium voluptatum mollitia doloribus repellat veniam fuga alias, reiciendis at!</p>
+                </section>
+                <section class="item spanAll stylings typography">
+                    <h2 class="nunito p8 linkAnchor" id = "linkToTypo">Typography</h2>
+                    <section class="headings">
+                        <h3 class="bold p8">Headings <code>&lt;h1&gt;</code> - <code>&lt;h6&gt;</code>:</h3>
+                        <p>All headings have been slightly sized up from most default sizings.  </p>
+                        <h1>Heading 1</h1>
+                        <h2>Heading 2</h2>
+                        <h3>Heading 3</h3>
+                        <h4>Heading 4</h4>
+                        <h5>Heading 5</h5>
+                        <h6>Heading 6</h6>  
+                    </section>
+                    <br>
+                    <section class="inlineText">
+                        <h3 class="bold p8">Inline Text:</h3>
+                        <p class="italic"><span class="italic"></span>This is an example of italicized text. </p>
+                        <p>--Use <code>class="italic"</code></p>
+                        <p class="bold">This is an example of bold text.</p>
+                        <p>--Use <code>class="bold"</code></p>
+                        <p class="italic bold">This is an example of bold italicized text.</p>
+                        <p>--Use <code>class="italic bold"</code></p>
+                        <p>This is an example of <a class="cite cite-color" href="#">how citations are styled.</a></p>
+                        <p>--Use <code>class="cite"</code>within an <code>&lt;a&gt;</code>tag.</p>
+                        <p>This is an example of how <abbr class="abbr">abbr </abbr>(Abbreviations) will appear. </p>
+                        <p>--Use <code>class="abbr"</code></p>
+                        <p>This is how <code>code</code> snippets will appear.</p>
+                        <p>--Use <code>&lt;code&gt;</code></p>
+                        <p class="uppercase">This is an example of what it will looklike using the uppercase class.</p>
+                        <p>--Use <code>class="uppercase"</code></p>
+                        <p class="capitalize">This is an example of what it will looklike using the capitalize class.</p>
+                        <p>--Use <code>class="capitalize"</code></p>
+                        <p class="lowercase">This is an example of what it will looklike using the lowercase class.</p>
+                        <p>--Use <code>class="lowercase"</code></p>
+                    </section>
+                    <h3 class="bold p8">Body Copy <code>&lt;p&gt;</code>:</h3>
+                    <p>This is an example of what the Body Copy will look like.  By default, it is centered to the page with slightly larger text sizing and line height than what is usually expected as the default.  This helps to enhance readability throughout all devices. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quisquam ipsum hic facere, magni sit beatae eum optio porro cum dignissimos praesentium quaerat aliquid iusto deleniti, impedit quam nemo dolor.</p>
+                </section>
+                <section class="item spanAll stylings">
+                    <h2 class="nunito p8 linkAnchor" id = "linkToColors">Colors</h2>
+                    <h3 class="bold p8">Subheadings</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo modi dignissimos quaerat aut, placeat officiis cupiditate vel voluptatem, ipsum magnam accusantium voluptatum mollitia doloribus repellat veniam fuga alias, reiciendis at!</p>
+                </section>
+                <section class="item spanAll stylings buttons">
+                    <h2 class="nunito p8 linkAnchor" id = "linkToButtons">Buttons</h2>
+                    <h3 class="bold p8">Button Sizing:</h3>
+                    <section class="buttons">
+                        <p> <button class="btnXS" type="button">Extra Small</button> --Use <code>class="btnXS" type="button"</code>within a <code>&lt;button&gt;</code>tag.</p>
+                        <p><button class="btnS" type="button">Small Button</button>--Use <code>class="btnS" type="button"</code>within a <code>&lt;button&gt;</code>tag.</p>
+                        <p> <button class="btnNormal" type="button">Normal Button</button>--Use <code>class="btnNormal" type="button"</code>within a <code>&lt;button&gt;</code>tag.</p>
+                        <p><button class="btnL" type="button">Large Button</button>--Use <code>class="btnL" type="button"</code>within a <code>&lt;button&gt;</code>tag.</p>
+                        <h3 class="bold p8">Reset and Submit Buttons:</h3>
+                        <p> <input class="btnReset" type="reset" value="Reset">--Use <code>class="btnReset" type="reset" value="reset"</code>within an <code>&lt;input&gt;</code>tag. Note: use classes <code>btnResetXS, btnResetS, btnResetL</code>for sizes extra small, small, and large, respectively.</p>
+                        <p><input class="btnSubmit" type="submit" value="Submit">--Use <code>class="btnSubmit" type="submit" value="submit"</code>within an <code>&lt;input&gt;</code>tag. Note: use classes <code>btnSubmitXS, btnSubmitS, btnSubmitL</code>for sizes extra small, small, and large, respectively.</p>
+                        <h3 class="bold p8">Drop Shadow: </h3>
+                        <p><button class="btnDropShadow" type="button">Drop Shadow</button>--Use <code>class="btnDropShadow" type="button"</code>within a <code>&lt;button&gt;</code>tag. Note: use <code>class="btnDropShadowSmall</code> on extra small and small buttons.</p>
+                        <h3 class="bold p8">Hover Color:</h3>
+                        <p><button class="btnHoverN2  btnL" type="button">Hover Color</button>--Use <code>class="btnHoverN2"</code>within an <code>&lt;button&gt;</code>tag to get the effect above. Note: use classes <code>btnHoverN2, btnHoverP1, btnHoverP2, btnHoverB1, or btnHoverB2</code> for more options.  The suffixes on each class (P1, for example)coorespond to the color palette classes below.</p>
+                        <h3 class="bold p8">Active Color:</h3>
+                        <p><button class="btnActiveB8 btnL" type="button">Active Color</button>--Use <code>class="btnActiveB8"</code>within an <code>&lt;button&gt;</code>tag to get the effect above. Note: use classes <code>btnActiveN5, btnActiveN8, btnActiveP3, btnActiveP5, or btnActive B6</code> for more options.  The suffixes on each class (P1, for example)coorespond to the color palette classes below.</p>
+                        <h3 class="bold p8">Examples:</h3>
+                        <button class="btnHoverN2 slackey n8BG btnL btnDropShadow" type="button">Example 1</button><button class="btnHoverB2 josefinSans btnNormal btnActiveB6 b1BG p7 btnDropShadow">Example 2</button>
+                    </section>
+                </section>
+                <section class="item spanAll stylings">
+                    <h2 class="nunito p8 linkAnchor" id = "linkToIcons">Icons</h2>
+                    <h3 class="bold p8">Subheadings</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo modi dignissimos quaerat aut, placeat officiis cupiditate vel voluptatem, ipsum magnam accusantium voluptatum mollitia doloribus repellat veniam fuga alias, reiciendis at!</p>
+                </section>
+                <section class="item spanAll stylings">
+                    <h2 class="nunito p8 linkAnchor" id = "linkToForms">Forms</h2>
+                    <p>You can make a responsive form with our framework. Make <code>&lt;form&gt;</code> and make <code>&lt;div class=&quot;formbg&rdquo;&gt;</code>. And then, make form elements such as <code>&lt;fieldset&gt;</code>, <code>&lt;label&gt;</code>, and <code>&lt;input&gt;</code>. You need to wrap your form elements <code>&lt;div&gt;</code> with some classes (class names depending on the element), like the sample code below.</p>
+                    <h3 class="bold p8">Example</h3>
+                    <form  action="#" method="post">
+                        <div class="formbg formBgColor">
+                            <p class="formRequired">* required</p>
+                            <fieldset>
+                                <legend class="n4">Fieldset</legend>
+                                <p>Text boxes look like this.</p>
+                                <div>
+                                    <label for="firstName">Your First Name*</label>
+                                    <input type="text" id="firstName" name="firstName"  placeholder="First name" required>
+                                </div>
+                                <div>
+                                    <label for="lastName">Your Last Name*</label>
+                                    <input type="text" id="lastName" name="lastName"  placeholder="Last name" required>
+                                </div>
+                                <div>
+                                    <label for="email">Email*</label>
+                                    <input type="email" id="email" name="email" placeholder="abc@abc.com" required>
+                                </div>
+                                <div>
+                                    <label for="phone">Phone number</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="1231231234">
+                                </div>
+                                <div class="formSpanGrid">
+                                    <label for="textMsg">Your Message</label>
+                                    <textarea name="textMsg" id="textMsg" class="textareaSm" placeholder="Write your message here"></textarea>
+                                </div>
+                            </fieldset>               
+                            <div class="formNoFieldset">
+                                <h3>No fieldset</h3>
+                                <p>You can make checkboxes, radiobuttons, and dropdown lists.</p>
+                                <div class="formChecks">
+                                    <p>Check items you want.</p>
+                                    <div>
+                                        <input type="checkbox" id="checkItem1" name="checkItem1">
+                                        <span></span>
+                                        <label for="checkItem1" class="checkLabel">Check item1</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="checkItem2" name="checkItem2">
+                                        <span></span>
+                                        <label for="checkItem2" class="checkLabel">Check item2</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="checkItem3" name="checkItem3">
+                                        <span></span>
+                                        <label for="checkItem3" class="checkLabel">Check item3</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="checkItem4" name="checkItem4">
+                                        <span></span>
+                                        <label for="checkItem4" class="checkLabel">Check item4</label>
+                                    </div>
+                                </div>
+                                <div class="formRadioBtns">
+                                    <p>Check ONE item you want.</p>
+                                    <div>
+                                        <label>
+                                            <input type="radio" name="radioItem" value="item1">
+                                            <span></span>item1
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="radio" name="radioItem" value="item2">
+                                            <span></span>item2
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="radio" name="radioItem" value="item3">
+                                            <span></span>item3
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="radio" name="radioItem" value="item4">
+                                            <span></span>item4
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="formDropDownLists">
+                                    <label for="ddLists">Choose an option.</label>
+                                    <select name="ddLists" id="ddLists">
+                                        <option value="option1" selected>Option1</option>
+                                        <option value="option2">Option2</option>
+                                        <option value="option3">Option3</option>
+                                        <option value="option4">Option4</option>
+                                    </select>
+                                </div>
+                            </div>
+                        <input type="submit" id="submit" value="submit" class="btnSubmit btnSubmitL btnDropShadow p5BG btnHoverP2">
+                        </div>
+                    </form>
+                    <p>To make the form above, write the code below.</p>
+                    <pre>
+<code>
+    &lt;form  action=&quot;#&quot; method=&quot;post&quot;&gt;
+    &lt;div class=&quot;formbg formBgColor&quot;&gt;
+        &lt;p class=&quot;formRequired&quot;&gt;* required&lt;/p&gt;
+        &lt;fieldset&gt;
+            &lt;legend class=&quot;n4&quot;&gt;Fieldset&lt;/legend&gt;
+            &lt;p&gt;Text boxes look like this.&lt;/p&gt;
+            &lt;div&gt;
+                &lt;label for=&quot;firstName&quot;&gt;Your First Name*&lt;/label&gt;
+                &lt;input type=&quot;text&quot; id=&quot;firstName&quot; name=&quot;firstName&quot;  placeholder=&quot;First name&quot; required&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+                &lt;label for=&quot;lastName&quot;&gt;Your Last Name*&lt;/label&gt;
+                &lt;input type=&quot;text&quot; id=&quot;lastName&quot; name=&quot;lastName&quot;  placeholder=&quot;Last name&quot; required&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+                &lt;label for=&quot;email&quot;&gt;Email*&lt;/label&gt;
+                &lt;input type=&quot;email&quot; id=&quot;email&quot; name=&quot;email&quot; placeholder=&quot;abc@abc.com&quot; required&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+                &lt;label for=&quot;phone&quot;&gt;Phone number&lt;/label&gt;
+                &lt;input type=&quot;tel&quot; id=&quot;phone&quot; name=&quot;phone&quot; placeholder=&quot;1231231234&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;formSpanGrid&quot;&gt;
+                &lt;label for=&quot;textMsg&quot;&gt;Your Message&lt;/label&gt;
+                &lt;textarea name=&quot;textMsg&quot; id=&quot;textMsg&quot; class=&quot;textareaSm&quot; placeholder=&quot;Write your message here&quot;&gt;&lt;/textarea&gt;
+            &lt;/div&gt;
+        &lt;/fieldset&gt;
+
+        &lt;div class=&quot;formNoFieldset&quot;&gt;
+            &lt;h3&gt;No fieldset&lt;/h3&gt;
+            &lt;p&gt;You can make checkboxes, radiobuttons, and dropdown lists.&lt;/p&gt;
+            &lt;div class=&quot;formChecks&quot;&gt;
+                &lt;p&gt;Check items you want.&lt;/p&gt;
+                &lt;div&gt;
+                    &lt;input type=&quot;checkbox&quot; id=&quot;checkItem1&quot; name=&quot;checkItem1&quot;&gt;
+                    &lt;span&gt;&lt;/span&gt;
+                    &lt;label for=&quot;checkItem1&quot; class=&quot;checkLabel&quot;&gt;Check item1&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                    &lt;input type=&quot;checkbox&quot; id=&quot;checkItem2&quot; name=&quot;checkItem2&quot;&gt;
+                    &lt;span&gt;&lt;/span&gt;
+                    &lt;label for=&quot;checkItem2&quot; class=&quot;checkLabel&quot;&gt;Check item2&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                    &lt;input type=&quot;checkbox&quot; id=&quot;checkItem3&quot; name=&quot;checkItem3&quot;&gt;
+                    &lt;span&gt;&lt;/span&gt;
+                    &lt;label for=&quot;checkItem3&quot; class=&quot;checkLabel&quot;&gt;Check item3&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                    &lt;input type=&quot;checkbox&quot; id=&quot;checkItem4&quot; name=&quot;checkItem4&quot;&gt;
+                    &lt;span&gt;&lt;/span&gt;
+                    &lt;label for=&quot;checkItem4&quot; class=&quot;checkLabel&quot;&gt;Check item4&lt;/label&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;formRadioBtns&quot;&gt;
+                &lt;p&gt;Check ONE item you want.&lt;/p&gt;
+                &lt;div&gt;
+                    &lt;label&gt;
+                        &lt;input type=&quot;radio&quot; name=&quot;radioItem&quot; value=&quot;item1&quot;&gt;
+                        &lt;span&gt;&lt;/span&gt;item1
+                    &lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                    &lt;label&gt;
+                        &lt;input type=&quot;radio&quot; name=&quot;radioItem&quot; value=&quot;item2&quot;&gt;
+                        &lt;span&gt;&lt;/span&gt;item2
+                    &lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                    &lt;label&gt;
+                        &lt;input type=&quot;radio&quot; name=&quot;radioItem&quot; value=&quot;item3&quot;&gt;
+                        &lt;span&gt;&lt;/span&gt;item3
+                    &lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                    &lt;label&gt;
+                        &lt;input type=&quot;radio&quot; name=&quot;radioItem&quot; value=&quot;item4&quot;&gt;
+                        &lt;span&gt;&lt;/span&gt;item4
+                    &lt;/label&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;formDropDownLists&quot;&gt;
+                &lt;label for=&quot;ddLists&quot;&gt;Choose an option.&lt;/label&gt;
+                &lt;select name=&quot;ddLists&quot; id=&quot;ddLists&quot;&gt;
+                    &lt;option value=&quot;option1&quot; selected&gt;Option1&lt;/option&gt;
+                    &lt;option value=&quot;option2&quot;&gt;Option2&lt;/option&gt;
+                    &lt;option value=&quot;option3&quot;&gt;Option3&lt;/option&gt;
+                    &lt;option value=&quot;option4&quot;&gt;Option4&lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;input type=&quot;submit&quot; id=&quot;submit&quot; value=&quot;submit&quot; class=&quot;btnSubmit btnSubmitL btnDropShadow p5BG btnHoverP2&quot;&gt;
+&lt;/form&gt;
+</code>
+                    </pre>
+                    <p>Option:<br>By default, the form doesn&rsquo;t have a background color. You can change the color into transparency white if you add <code>class = &ldquo;formBgColor&rdquo;</code> into <code>&lt;div class=&quot;formbg&rdquo;&gt;</code>.</p>
+                    <p>Option:<br> If your HTML doesn&rsquo;t have <code>&lt;fieldset&gt;</code>, wrap your form elements inside <code>&lt;div class =&rdquo;formNoFieldset&rdquo;&gt;</code>.</p>
+                </section>
+                <section class="item spanAll stylings">
+                    <h2 class="nunito p8 linkAnchor" id = "linkToTables">Tables</h2>
+                    <h3 class="bold p8">Subheadings</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo modi dignissimos quaerat aut, placeat officiis cupiditate vel voluptatem, ipsum magnam accusantium voluptatum mollitia doloribus repellat veniam fuga alias, reiciendis at!</p>
+                </section>
+                <section class="item spanAll stylings">
+                    <h2 class="nunito p8 linkAnchor" id = "linkToLists">Lists</h2>
+                    <h3 class="bold p8">Subheadings</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo modi dignissimos quaerat aut, placeat officiis cupiditate vel voluptatem, ipsum magnam accusantium voluptatum mollitia doloribus repellat veniam fuga alias, reiciendis at!</p>
+                </section>
+                <section class="item spanAll stylings">
+                    <h2 class="nunito p8 linkAnchor" id = "linkToUtility">Utlility Classes</h2>
+                    <h3 class="bold p8">Subheadings</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo modi dignissimos quaerat aut, placeat officiis cupiditate vel voluptatem, ipsum magnam accusantium voluptatum mollitia doloribus repellat veniam fuga alias, reiciendis at!</p>
+                </section>
+            </div>
+        </main>
+        <aside>
+            <div class="asideInner">
+                <h4 class="nunito p8">Style Categories</h4>
+                <ul>
+                    <li class="nunito"><a href="#linkToGrid">Grid</a></li>
+                    <li class="nunito"><a href="#linkToNav">Navigation</a></li>
+                    <li class="nunito"><a href="#linkToTypo">Typography</a></li>
+                    <li class="nunito"><a href="#linkToColors">Colors</a></li>
+                    <li class="nunito"><a href="#linkToButtons">Buttons</a></li>
+                    <li class="nunito"><a href="#linkToIcons">Icons</a></li>
+                    <li class="nunito"><a href="#linkToForms">Forms</a></li>
+                    <li class="nunito"><a href="#linkToTables">Tables</a></li>
+                    <li class="nunito"><a href="#linkToLists">Lists</a></li>
+                    <li class="nunito"><a href="#linkToUtility">Utility Classes</a></li> 
+                </ul>
+            </div>
+        </aside>
+        <footer>&copy; 2023 | prestoframework.com</footer>
+    </div>
+    <script src="../scripts/scripts.js"></script>
+    <script src="../scripts/calendar.js"></script>
+    <script src="../scripts/modal.js"></script>
+    <script src="../scripts/scrollIn.js"></script>
+</body>
+</html>

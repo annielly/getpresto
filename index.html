@@ -3,11 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Presto Framework Website</title>
-    <link rel="stylesheet" href="styles/">
-</head>
-<body>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone+Bounce&family=Josefin+Sans&family=Josefin+Slab&family=Limelight&family=Lora&family=Megrim&family=Monsieur+La+Doulaise&family=Nunito&family=Open+Sans&family=Playfair+Display&family=Rock+Salt&family=Sacramento&family=Shrikhand&family=Slackey&family=Special+Elite&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+
+    <title>Presto!</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/main.css">
     
-    <script src="scripts/"></script>
+</head>
+<body class="p7BG nunito">
+    <div class="bodyGrid noAside">
+        <header class="nunito p7BG">
+            <nav class="navbar p7BG">
+                <div class="navbar_logo">
+                    <!--LOGO IMAGE-->
+                    <a class="sacramento b7" href="#">Presto!</a>
+                </div>
+                <ul class="navbar_menu ">
+                    <li><a class="b5 nunito" href="index.html">Home</a></li>
+                    <li><a class="b5 nuntio" href="pages/styling.html">Styling</a></li>
+                    <li><a class="b5 nunito" href="pages/components.html">Components</a></li>
+                    <li><a class="b5 nunito" href="pages/demo.html">Demo Sites</a></li>
+                </ul>
+                <ul class="navbar_icons">
+                    <li><a href="#"><i class="fa-brands fa-facebook b7"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram b7"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin b7"></i></a></li> 
+                    <li><a href="#"><i class="fa-brands fa-youtube b7"></i></a></li>
+                </ul>
+                <!--HAMBURGER ICON-->
+                <a href="#" class="navbar_toggleBtn">
+                    <i class="fa-solid fa-bars b7"></i>
+                </a>
+            </nav>
+            <h1 class ="p7BG p8">Welcome to the<span class="sacramento b7 brand"> Presto </span> Framework!</h1>
+        </header>
+        <main>
+            <div class="container">
+                <section class="item spanAll stylings">
+                    <p class="nunito">We are a website framework that was created with the musical entreprenuer in mind.  With <span class="sacramento b7 brand">Presto!</span>, you can quickly create a personalized website to help promote your work, announce tour dates, and more.  We named our framework after the musical tempo "presto" because we get you up and running super fast so you can get back to doing what you love quicker--music!</p>
+                </section>
+                <section class="item spanAll stylings">
+                    <h2 class="item spanAll p8">How to use Presto!</h2>
+                    <h3 class="nunito">Step 1:Download the <span class="sacramento b7 brand">Presto!</span> Framework!</h3>
+                    <button class="btnL p5BG btnDropShadow btnHoverP2 btnActiveN5 nuntio">Download</button>
+                    <h3 class="nunito">Step 2: Set up your HTML</h3>
+                    <p class="nunito">By default, <span class="sacramento b7 brand">Presto!</span> inludes links to Font Awesome and Google Fonts, as well as links the index page to the necessary CSS and JavaScript pages.  This step is to make you aware of this, and to show how to add these links should you need to.</p>
+                    <h3 class="nunito">Step 3: Styling with <span class="sacramento b7 brand">Presto!</span></h3>
+                    <p class="nunito">Step 3: Go through the <span class="b5 spanSM">Styling</span> and <span class="b5 spanSM">Components</span> pages and add the necessary code per the instructions. You can find links in the menu at the top of the page.</p>
+                </section>
+            </div>
+        </main>
+        <footer>
+         &copy; 2023 | prestoframework.com
+        </footer>
+    </div>
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/calendar.js"></script>
+    <script src="scripts/modal.js"></script>
+    <script src="scripts/scrollIn.js"></script>
 </body>
 </html>

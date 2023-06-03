@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone+Bounce&family=Josefin+Sans&family=Josefin+Slab&family=Limelight&family=Lora&family=Megrim&family=Monsieur+La+Doulaise&family=Nunito&family=Open+Sans&family=Playfair+Display&family=Rock+Salt&family=Sacramento&family=Shrikhand&family=Slackey&family=Special+Elite&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+
+    <title>Components | Presto!</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    
+</head>
+<body class="p7BG nunito">
+   <div class="bodyGrid asideL">
+      <header class="nunito">
+         <nav class="navbar p7BG">
+            <div class="navbar_logo">
+               <!--LOGO IMAGE-->
+               <a class="sacramento b7" href="../index.html">Presto!</a>
+            </div>
+            <ul class="navbar_menu ">
+               <li><a class="b5 nunito" href="../index.html">Home</a></li>
+               <li><a class="b5 nuntio" href="styling.html">Styling</a></li>
+               <li><a class="b5 nunito" href="#">Components</a></li>
+               <li><a class="b5 nunito" href="demo.html">Demo Sites</a></li>
+            </ul>
+            <ul class="navbar_icons">
+               <li><a href="#"><i class="fa-brands fa-facebook b7"></i></a></li>
+               <li><a href="#"><i class="fa-brands fa-instagram b7"></i></a></li>
+               <li><a href="#"><i class="fa-brands fa-linkedin b7"></i></a></li> 
+               <li><a href="#"><i class="fa-brands fa-youtube b7"></i></a></li>
+            </ul>
+            <!--HAMBURGER ICON-->
+            <a href="#" class="navbar_toggleBtn">
+               <i class="fa-solid fa-bars b7"></i>
+            </a>
+         </nav>
+         <h1 class="p8">Components</h1>
+      </header>
+      <main>
+         <div class="container width100">
+            <section class="item spanAll stylings">
+               <h2 class="nunito p8 linkAnchor" id = "linkToCalendar">Calendar</h2>
+               <h3 class="bold p8">Subheadings</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo modi dignissimos quaerat aut, placeat officiis cupiditate vel voluptatem, ipsum magnam accusantium voluptatum mollitia doloribus repellat veniam fuga alias, reiciendis at!</p>
+            </section>
+            <section class="item spanAll stylings">
+               <h2 class="nunito p8 linkAnchor" id = "linkToModal">Modal Photos</h2>
+               <h3 class="bold p8">Subheadings</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo modi dignissimos quaerat aut, placeat officiis cupiditate vel voluptatem, ipsum magnam accusantium voluptatum mollitia doloribus repellat veniam fuga alias, reiciendis at!</p>
+            </section>
+            <section class="item spanAll stylings" id = "compoPagePhotoFilters">
+               <h2 class="nunito p8 linkAnchor" id = "linkToPhoto">Photo Filters</h2>
+               <div>
+                  <div>
+                     <figure>
+                        <img src="../images/musician.jpg" alt="woman holding guitar">
+                        <figcaption>Original Image</figcaption>
+                     </figure> 
+                  </div>
+                  <div>
+                     <figure>
+                        <img class="shadow" src="../images/musician.jpg" alt="woman holding guitar">
+                        <figcaption>Shadow</figcaption>
+                        <figcaption><code>class="shadow"</code></figcaption>
+                     </figure>
+                  </div>
+                  <div>
+                     <figure>
+                        <img class="rounded" src="../images/musician.jpg" alt="woman holding guitar">
+                        <figcaption>Rounded Corners</figcaption>
+                        <figcaption><code>class="rounded"</code></figcaption>
+                     </figure>  
+                  </div>
+                  <div>
+                     <figure>
+                        <img class="oval" src="../images/musician.jpg" alt="woman holding guitar">
+                        <figcaption>Oval if img was rectangle</figcaption>
+                        <figcaption>Circle if img was square</figcaption>
+                        <figcaption><code>class="oval"</code></figcaption>
+                     </figure>
+                  </div>
+                  <div>
+                     <figure>
+                        <img class="muted" src="../images/musician.jpg" alt="woman holding guitar">
+                        <figcaption>Muted</figcaption>
+                        <figcaption><code>class="muted"</code></figcaption>
+                     </figure>  
+                  </div>
+                  <div>
+                     <figure>
+                        <img class="blur" src="../images/musician.jpg" alt="woman holding guitar">
+                        <figcaption>Blur</figcaption>
+                        <figcaption><code>class="blur"</code></figcaption>
+                     </figure>  
+                  </div>
+                  <div>
+                     <figure>
+                        <img class="highContrast" src="../images/musician.jpg" alt="woman holding guitar">
+                        <figcaption>High Contrast</figcaption>
+                        <figcaption><code>class="highContrast"</code></figcaption>
+                     </figure>  
+                  </div>
+                  <div>
+                     <figure>
+                        <img class="hueRotate90" src="../images/musician.jpg" alt="woman holding guitar">
+                        <figcaption>Hue Rotate 90</figcaption>
+                        <figcaption><code>class="hueRotate90"</code></figcaption>
+                     </figure>  
+                  </div>
+                  <div>
+                     <figure>
+                        <img class="hueRotate180" src="../images/musician.jpg" alt="woman holding guitar">
+                        <figcaption>Hue Rotate 180</figcaption>
+                        <figcaption><code>class="hueRotate180"</code></figcaption>
+                     </figure>  
+                  </div>
+                  <div>
+                     <figure>
+                        <img class="hueRotate270" src="../images/musician.jpg" alt="woman holding guitar">
+                        <figcaption>Hue Rotate 270</figcaption>
+                        <figcaption><code>class="hueRotate270"</code></figcaption>
+                     </figure>  
+                  </div>
+                  <div>
+                     <figure>
+                        <img class="inverted" src="../images/musician.jpg" alt="woman holding guitar">
+                        <figcaption>Inverted</figcaption>
+                        <figcaption><code>class="inverted"</code></figcaption>
+                     </figure>  
+                  </div>
+                  <div>
+                     <figure>
+                        <img class="mixed1" src="../images/musician.jpg" alt="woman holding guitar">
+                        <figcaption>Mixed 1</figcaption>
+                        <figcaption><code>class="mixed1"</code></figcaption>
+                     </figure>  
+                  </div>
+                  <div>
+                     <figure>
+                        <img class="mixed2" src="../images/musician.jpg" alt="woman holding guitar">
+                        <figcaption>Mixed 2</figcaption>
+                        <figcaption><code>class="mixed2"</code></figcaption>
+                     </figure>  
+                  </div>
+                  <div>
+                     <figure>
+                        <img class="mixed3" src="../images/musician.jpg" alt="woman holding guitar">
+                        <figcaption>Mixed 3</figcaption>
+                        <figcaption><code>class="mixed3"</code></figcaption>
+                     </figure>  
+                  </div>
+                  <div>
+                     <figure>
+                        <img class="mixed4" src="../images/musician.jpg" alt="woman holding guitar">
+                        <figcaption>Mixed 4</figcaption>
+                        <figcaption><code>class="mixed4"</code></figcaption>
+                     </figure>  
+                  </div>
+                  <div>
+                     <figure>
+                        <img class="mixed5" src="../images/musician.jpg" alt="woman holding guitar">
+                        <figcaption>Mixed 5</figcaption>
+                        <figcaption><code>class="mixed5"</code></figcaption>
+                     </figure>  
+                  </div>
+               </div>
+            </section>
+            <section class="item spanAll stylings">
+               <h2 class="nunito p8 linkAnchor" id = "linkToParallax">Parallax Scrolling</h2>
+               <h3 class="bold p8">Subheadings</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo modi dignissimos quaerat aut, placeat officiis cupiditate vel voluptatem, ipsum magnam accusantium voluptatum mollitia doloribus repellat veniam fuga alias, reiciendis at!</p>
+            </section>
+            <section class="item spanAll stylings">
+               <h2 class="nunito p8 linkAnchor" id = "linkToMusic">Music Player</h2>
+               <h3 class="bold p8">Subheadings</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo modi dignissimos quaerat aut, placeat officiis cupiditate vel voluptatem, ipsum magnam accusantium voluptatum mollitia doloribus repellat veniam fuga alias, reiciendis at!</p>
+            </section>
+            <section class="item spanAll stylings">
+               <h2 class="nunito p8 linkAnchor" id = "linkToVideo">Video Embedding:</h2>
+               <p>Make a <code>section</code> with <code>class="videos"</code>. In order to embed the videos, you will need the <code>iframe</code> tag with the video's URL, which will be found on the videos's hosted site. Then within the <code>section</code>, you will put the <code>iframe</code> into a <code>div</code> with <code>class="video"</code>. Underneath this, you can add your text with <code>h3</code> and <code>p</code> tags, respectively. Finally, wrap both the <code>div</code> containing the <code>iframe </code> AND the text within another <code>div</code> with <code>class="vid vid1"</code>. Note: you will change out <code>class="vid1"</code> for <code>vid2, vid3, or vid4</code> depending on how many videos you add.  For example, the second video would have <code>class="vid vid2"</code>You may add up to 4 videos per page.</p>
+               <section class="videos">
+                  <div class="vid vid1">
+                     <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/1ZtUDtjbUoM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                     </div>
+                     <h3>Lorem ipsum dolor </h3>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas atque vero molestiae, in deserunt repellendus nobis dolores laboriosam! Illo dolor voluptas reprehenderit? Voluptates molestiae officiis, ipsa at ea non harum.</p>
+                  </div>
+                  <div class="vid vid2">
+                     <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/CYTbuHrNfaA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                     </div>
+                     <h3> molestiae voluptas quasi ea odit veniam laborum.</h3>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae accusamus distinctio, aliquam eligendi adipisci beatae ratione quia dolorem eaque ullam minima harum laudantium quibusdam incidunt eos velit? Laboriosam, fugiat, quidem.</p>
+                  </div>
+                  <div class="vid vid3">
+                     <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/l-ljNug4V-E" title="YouTube video player" frameborder="0" allow= allowfullscreen></iframe>
+                     </div>
+                     <h3>voluptatum suscipit, recusandae cupiditate</h3>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit ratione possimus nemo rerum, distinctio, reprehenderit, ea neque voluptas minima repellat odit nam excepturi ullam non nulla iusto expedita. Suscipit, maiores?</p>
+                  </div>  
+                  <div class="vid vid4">
+                     <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/d7NmbPArNt8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                     </div>
+                     <h3>Lorem ipsum dolor sit amet, consectetur adipisicing </h3>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, itaque possimus quos reprehenderit, voluptatibus, modi at delectus, aut ex eos sequi asperiores ratione deserunt earum. Enim repellendus omnis placeat tempora.</p>
+                  </div>
+               </section>
+            </section>
+         </div>
+      </main>
+      <aside>
+         <div class="asideInner">
+         <h4 class="nunito p8">Component Categories</h4>
+            <ul>
+               <li class="nunito"><a href="#linkToCalendar">Calendar</a></li>
+               <li class="nunito"><a href="#linkToModal">Modal Photos</a></li>
+               <li class="nunito"><a href="#linkToPhoto">Photo Filters</a></li>
+               <li class="nunito"><a href="#linkToParallax">Parallax Scrolling</a></li>
+               <li class="nunito"><a href="#linkToMusic">Music Player</a></li>
+               <li class="nunito"><a href="#linkToVideo">Video Player</a></li> 
+            </ul>
+         </div>
+      </aside>
+      <footer>
+         &copy; 2023 | prestoframework.com
+      </footer>
+    </div>
+    <script src="../scripts/scripts.js"></script>
+    <script src="../scripts/calendar.js"></script>
+    <script src="../scripts/modal.js"></script>
+    <script src="../scripts/scrollIn.js"></script>
+   
+</body>
+</html>
