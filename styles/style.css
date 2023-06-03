@@ -221,7 +221,43 @@ a[href^='tel']::before {
     padding-right: .5em; 
     font-style: normal;
 }
-
+/*********Link Hover*********/
+.aHoverN1:hover {
+    color: rgba(169, 169, 169);
+}
+.aHoverN2:hover {
+    color: rgb(189, 183, 107);
+}
+.aHoverP1:hover {
+    color: rgb(127, 255, 212);
+}
+.btnHoverP2:hover {
+    color: rgb(255, 182, 193);
+}
+.aHoverB1:hover {
+    color: rgb(0, 0, 139); 
+}
+.aHoverB2:hover {
+    color: rgb(220, 20, 60); 
+}
+.aActiveN5:active {
+    color: rgb(143, 188, 143);
+}
+.aActiveN8:active {
+    color: rgb(188, 143, 143);
+}
+.aActiveP3:active {
+    color: rgb(255, 255, 0);
+}
+.aActiveP5:active {
+    color: rgb(175, 238, 238);
+}
+.aActiveB6:active {
+    color: rgb(255, 20, 147);
+}
+.aActiveB8:active {
+    color: rgb(0, 255, 0);
+}
 /*********BUTTONS***********/
 .btnXS, .btnResetXS, .btnSubmitXS {
     font-size: .5rem;
