@@ -1,5 +1,5 @@
  const images = document.querySelectorAll(".images img");
-        const modal = document.querySelector(".modal");
+        const modalImgBG = document.querySelector(".modalImgBG");
         const modalImg = document.querySelector(".modalImg");
         const modalTxt = document.querySelector(".modalTxt");
         const close = document.querySelector(".close");
@@ -10,7 +10,7 @@
             image.addEventListener("click", () => {
                 modalImg.src = image.src;
                 modalTxt.innerHTML = image.alt;
-                modal.classList.add("appear");
+                modalImgBG.classList.add("appear");
 
                 let imageIndex = index;
                 let next = imageIndex++;
@@ -34,7 +34,7 @@
                         next++;
                         prev = next - 2;
                     } else if (e.keyCode === 27) {
-                        modal.classList.remove("appear");
+                        modalImgBG.classList.remove("appear");
                     }
                 });
 
@@ -53,7 +53,7 @@
                 });
 
                 close.addEventListener("click", ()=> {
-                    modal.classList.remove("appear");
+                    modalImgBG.classList.remove("appear");
                 });
             });
         });
