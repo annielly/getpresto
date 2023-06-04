@@ -135,14 +135,6 @@ figcaption {
 }
 /* END styles for typography page */
 
-/* photo gallery modal */
-.pTextClose {
-    background-color: gray;
-    color: white;
-    border-radius: 20px;
-    padding-left: 12px;
-}
-
 /********* <aside> elements ***********/
 aside {
     text-align: center;
