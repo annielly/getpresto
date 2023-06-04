@@ -808,7 +808,7 @@ body.parallaxBg.parallaxBgBlur::before {
 
 /************************ICONS************************/
 /*****************************************************/
-.displayIcon {
+/* .displayIcon {
     display: none;
     background-color: #eee;
     margin: 0 10%;
@@ -829,11 +829,15 @@ body.parallaxBg.parallaxBgBlur::before {
             justify-content: center;
   }
 
-/* .amenities, .web, .menu {
+.amenities, .web, .menu {
     padding: 20px;
     margin: 20px; 
    
 } */
+
+i {
+    padding-right: .8rem;
+}
 
 /************************NAV**************************/
 /*****************************************************/
@@ -1005,7 +1009,7 @@ nav { margin-top: 5rem; }
 
 /****************** HELPER CLASSES********************/
 /*****************************************************/
-.displayCode {
+/* .displayCode {
     display: none;
     background-color: #eee;
     margin: 0 10%;
@@ -1028,6 +1032,22 @@ nav { margin-top: 5rem; }
 .clearFixexample, .floatExample{
     padding: 20px;
     margin: 20px; 
+} */
+
+.float-left {
+    float: left;
+    padding: 1rem;
+}
+
+.float-right {
+    float: right;
+    padding: 1rem;
+}
+
+.clearFix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 /*********************** TABLE ***********************/
@@ -1263,19 +1283,19 @@ body {
         max-width: 500px;
     }
     /*********** icons ***********/
-    .iconFonts .container {
+    /* .iconFonts .container {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
               flex-direction: row;
-    }
+    } */
     /*********** helper classes ***********/
-    .helperClass .container {
+    /* .helperClass .container {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
               flex-direction: row;
-    }
+    } */
     /*********** modal ***********/
     .images {
         display: grid;
