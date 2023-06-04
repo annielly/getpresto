@@ -231,7 +231,7 @@ a[href^='tel']::before {
 .aHoverP1:hover {
     color: rgb(127, 255, 212);
 }
-.btnHoverP2:hover {
+.aHoverP2:hover {
     color: rgb(255, 182, 193);
 }
 .aHoverB1:hover {
