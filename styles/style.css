@@ -1642,6 +1642,11 @@ body {
     #calendar {
         padding-top: 5px;
       }
+    #addEvent,
+    #viewEvent {
+        top: -319px;
+        left: -1px;
+    }
 }
 
 @media print {
