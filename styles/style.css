@@ -766,7 +766,7 @@ form input[type="submit"] {
     width: 150px;
     margin: 2rem auto;
     height: auto;
-    font-family: 'Open Sans', serif;
+    /* font-family: 'Open Sans', serif; */
 }
 /*********** End submit button styles ***********/
 
