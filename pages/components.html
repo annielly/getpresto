@@ -45,8 +45,99 @@
          <div class="container width100">
             <section class="item spanAll stylings">
                <h2 class="nunito p8 linkAnchor" id = "linkToCalendar">Calendar</h2>
-               <h3 class="bold p8">Subheadings</h3>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo modi dignissimos quaerat aut, placeat officiis cupiditate vel voluptatem, ipsum magnam accusantium voluptatum mollitia doloribus repellat veniam fuga alias, reiciendis at!</p>
+               <p>Use our calendar to tell everyone when you have an event, drop a single, or release an album! Simply click on desired date to add, delete, or edit an event. </p>
+               <div class="calContainer">
+                  <div class="calHeader">
+                    <div id="month"></div>
+                    <div>
+                      <button id="btnBack"><i class="fa fa-angle-left"></i></button>
+                      <button id="btnNext"><i class="fa fa-angle-right"></i></button>
+                    </div>
+                  </div>
+                  <div class="weekdays">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                  </div>
+                  <div id="calendar"></div>
+                  <div id="calModal"></div>
+                </div>
+                <div id="addEvent">
+                  <h2>Add Event</h2>
+                  <input type="text" id="txtTitle" placeholder="Event Title" />
+                  <button id="btnSave">Save</button>
+                  <button class="btnClose">Close</button>
+                </div>
+
+                <div id="viewEvent">
+                  <h2>Event</h2>
+                  <p id="eventText">This is Sample Event</p>
+                  <button id="btnDelete">Delete</button>
+                  <button class="btnClose">Close</button>
+                </div>
+                <h3 class="bold p8">Code</h3>
+                <p>To begin, add the code below to your html file:</p>
+                <pre>
+<code>
+    &lt;div class=&quot;calContainer&quot;&gt;
+      &lt;div class=&quot;calHeader&quot;&gt;
+        &lt;div id=&quot;month&quot;&gt;&lt;/div&gt;
+        &lt;div&gt;
+          &lt;button id=&quot;btnBack&quot;&gt;&lt;i class=&quot;fa fa-angle-left&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+          &lt;button id=&quot;btnNext&quot;&gt;&lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;weekdays&quot;&gt;
+        &lt;div&gt;Sun&lt;/div&gt;
+        &lt;div&gt;Mon&lt;/div&gt;
+        &lt;div&gt;Tue&lt;/div&gt;
+        &lt;div&gt;Wed&lt;/div&gt;
+        &lt;div&gt;Thu&lt;/div&gt;
+        &lt;div&gt;Fri&lt;/div&gt;
+        &lt;div&gt;Sat&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div id=&quot;calendar&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;calModal&quot;&gt;&lt;/div&gt;
+    &lt;div id=&quot;addEvent&quot;&gt;
+      &lt;h2&gt;Add Event&lt;/h2&gt;
+      &lt;input type=&quot;text&quot; id=&quot;txtTitle&quot; placeholder=&quot;Event Title&quot; /&gt;
+      &lt;button id=&quot;btnSave&quot;&gt;Save&lt;/button&gt;
+      &lt;button class=&quot;btnClose&quot;&gt;Close&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;viewEvent&quot;&gt;
+      &lt;h2&gt;Event&lt;/h2&gt;
+      &lt;p id=&quot;eventText&quot;&gt;This is Sample Event&lt;/p&gt;
+      &lt;button id=&quot;btnDelete&quot;&gt;Delete&lt;/button&gt;
+      &lt;button class=&quot;btnClose&quot;&gt;Close&lt;/button&gt;
+    &lt;/div&gt;
+</code>
+                </pre>
+                <p>Be sure you have properly linked our stylesheet and the calendar.js file for this calendar component. You can also manually add holidays or special events into the holidays variable in the JavaScript file:</p>
+                <pre>
+<code>
+    const holidays = [
+  {
+    hdate: "01-01-2023",
+    holiday: "New Year's Day",
+  },
+  {
+    hdate: "06-17-2023",
+    holiday: "JAM SESH",
+  },
+  {
+    // To add desired holidays or special events, input like the format below to this array
+    // hdate: "25-12-2023",
+    // holiday: "Christmas",
+  },
+];
+</code>
+               </pre>
+               <br>
             </section>
             <section class="item spanAll stylings">
                <h2 class="nunito p8 linkAnchor" id = "linkToModal">Modal Photos</h2>

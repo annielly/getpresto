@@ -1050,6 +1050,177 @@ nav { margin-top: 5rem; }
     background-color: #f2f2f2;
 }
 
+/*********************** CALENDAR ***********************/
+/*****************************************************/
+.calContainer {
+    width: 720px;
+    padding: 6px;
+    border: solid 1px #7f8fa6;
+    border-radius: 10px;
+  }
+  
+  .calHeader {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .calHeader #month {
+    color: #706fd3;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  
+  .calHeader button {
+    width: 75px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 3px;
+    color: white;
+  }
+  
+  .calHeader button {
+    background-color: #706fd3;
+  }
+  .weekdays {
+    width: 100%;
+    display: flex;
+    background-color: #2f3640;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 4px;
+  }
+  
+  .weekdays div {
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  #calendar {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .day {
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 3px #cbd4c2;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .day:hover {
+    background-color: rgba(112, 111, 211, 0.1);
+    color: #706fd3;
+  }
+  
+  #currentDay {
+    background-color: #706fd3;
+    color: #fff;
+  }
+  
+  .event {
+    font-size: 10px;
+    padding: 3px;
+    background-color: gray;
+    color: #fff;
+    border-radius: 5px;
+    max-height: 55px;
+    overflow: hidden;
+  }
+  
+  .event.holiday {
+    background-color: rgb(241, 212, 189);
+    color: #3d3d3d;
+  }
+  
+  .plain {
+    cursor: default;
+    box-shadow: none;
+  }
+  
+  #calModal {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  #addEvent,
+  #viewEvent {
+    display: none;
+    width: 350px;
+    background-color: #fff;
+    padding: 25px;
+    position: relative;
+    border-radius: 4px;
+    top: -430px;
+    left: 12px;
+    z-index: 20;
+  }
+  
+  #addEvent h2,
+  #viewEvent h2 {
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  #txtTitle {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid #cbd4c2;
+    font-size: 16px;
+  }
+  
+  #btnSave {
+    background-color: #706fd3;
+    color: #fff;
+    padding: 2px;
+    border-radius: 4px;
+  }
+  
+  .btnClose {
+    background-color: #2f3542;
+    color: #fff;
+    padding: 2px;
+    border-radius: 4px;
+  }
+  
+  #viewEvent p {
+    margin-bottom: 20px;
+  }
+  
+  #btnDelete {
+    background-color: #ea2027;
+    padding: 2px;
+    border-radius: 4px;
+  }
+  
+  .error {
+    border-color: #ea2027 !important;
+  }
+
 /*********************** MODAL ***********************/
 /*****************************************************/
 /* apply only to modal
@@ -1195,12 +1366,6 @@ body {
 
 /**********************MEDIA QUERIES******************/
 /*****************************************************/
-/*
-@media screen and (min-width: 360px) {
-    
-}
-*/
-
 @media screen and (min-width:600px) {
     /*********** grid layout ***********/
     .bodyGrid {
@@ -1436,6 +1601,27 @@ body {
     .item.spanRight3LG {
         grid-column: 4/7;
     }
+}
+/*********** calendar small/mobile ***********/
+@media (max-width: 1110px) {
+    .calContainer {
+        width: 335px;
+    }
+    .weekdays div {
+        padding: 5px;
+    }
+    .day {
+        width: 43px;
+        height: 43px;
+        padding: 3px;
+        margin: 1.33px;
+    }
+    .calHeader button {
+        width: 35px;
+    }
+    #calendar {
+        padding-top: 5px;
+      }
 }
 
 @media print {
