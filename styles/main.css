@@ -135,6 +135,12 @@ figcaption {
 }
 /* END styles for typography page */
 
+/* input hovor */
+input[type = "submit"]:hover {
+    color: rgb(0, 0, 139);
+}
+/* END input hovor */
+
 /********* <aside> elements ***********/
 aside {
     text-align: center;

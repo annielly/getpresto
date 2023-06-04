@@ -23,16 +23,16 @@
                     <a class="sacramento b7" href="../index.html">Presto!</a>
                 </div>
                 <ul class="navbar_menu">
-                    <li><a class="b5 nunito" href="../index.html">Home</a></li>
+                    <li><a class="b5 aHoverB1 nunito" href="../index.html">Home</a></li>
                     <li><a class="b5 nuntio" href="../pages/styling.html">Stylings</a></li>
-                    <li><a class="b5 nunito" href="../pages/components.html">Components</a></li>
-                    <li><a class="b5 nunito" href="../pages/demo.html">Demo Sites</a></li>
+                    <li><a class="b5 aHoverB1 nunito" href="../pages/components.html">Components</a></li>
+                    <li><a class="b5 aHoverB1 nunito" href="../pages/demo.html">Demo Sites</a></li>
                 </ul>
                 <ul class="navbar_icons">
-                    <li><a href="#"><i class="fa-brands fa-facebook b7"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-instagram b7"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-linkedin b7"></i></a></li> 
-                    <li><a href="#"><i class="fa-brands fa-youtube b7"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook b7 aHoverB1"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram b7 aHoverB1"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin b7 aHoverB1"></i></a></li> 
+                    <li><a href="#"><i class="fa-brands fa-youtube b7 aHoverB1"></i></a></li>
                 </ul>
                 <!--HAMBURGER ICON-->
                 <a href="#" class="navbar_toggleBtn">
@@ -125,8 +125,84 @@
                 </section>
                 <section class="item spanAll stylings">
                     <h2 class="nunito p8 linkAnchor" id = "linkToNav">Navigation</h2>
-                    <h3 class="bold p8">Subheadings</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo modi dignissimos quaerat aut, placeat officiis cupiditate vel voluptatem, ipsum magnam accusantium voluptatum mollitia doloribus repellat veniam fuga alias, reiciendis at!</p>
+                     <p>There are two types of navigation styles to choose from.  The first is a horizontal navbar that collapses to a hamburger menu at small screen.  The second is a toggle menu that remains offscreen until the link is clicked.</p>
+                    <h3 class="nunito p8">Option 1 - Horizontal Nav with Hamburger Menu:</h3>
+                    <p>This is an example of the horizontal nav at widescreen:</p>
+                    <img src="../images/horizontalNav.png" alt="example of horizontal nav">
+                    <p>At smallscreen, it collapses to a hamburger menu with left-aligned logo icon:</p>
+                    <img src="../images/hamburgerNavClosed.png" alt="example of closed hamburger nav">
+                    <p>When you click on the hamburger icon, the menu items and social media icons open:</p>
+                    <img src="../images/hamburgerNavOpen.png" alt="examples of open hamburger nav">
+                    <p>Use the code below to get started:</p>
+                     <pre>
+<code>
+&lt;nav class=&quot;navbar&quot;&gt;
+        &lt;div class=&quot;navbar_logo&quot;&gt;
+            &lt;!--LOGO IMAGE--&gt;
+            &lt;a href=&quot;#&quot;&gt;Logo&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;ul class=&quot;navbar_menu&quot;&gt;
+           &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+           &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+           &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+           &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+           &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 5&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;ul class=&quot;navbar_icons&quot;&gt;
+            &lt;li&gt;&lt;i class=&quot;fa-brands fa-facebook&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;i class=&quot;fa-brands fa-instagram&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;i class=&quot;fa-brands fa-linkedin&quot;&gt;&lt;/i&gt; &lt;/li&gt; 
+            &lt;li&gt;&lt;i class=&quot;fa-brands fa-youtube&quot;&gt;&lt;/i&gt;&lt;/li&gt;
+           
+        &lt;/ul&gt;
+        &lt;!--HAMBURGER ICON--&gt;
+        &lt;a href=&quot;#&quot; class=&quot;navbar_toggleBtn&quot;&gt;
+            &lt;i class=&quot;fa-solid fa-bars&quot;&gt;
+            &lt;/i&gt;
+        &lt;/a&gt;
+    &lt;/nav&gt;
+</code>
+                    </pre>
+                     <h3 class="nunito p8">Option 2 - Offscreen Toggle Menu:</h3>
+                     <p>This is an example of how the toggle menu will look when it is closed and offscreen. You can add text or icons on the left and right sides:</p>
+                     <img src="../images/toggleNavClosed.png" alt="example of toggle menu closed">
+                     <p>When you click the lefthand link (in this example, the menu link), the toggle menu with slide in from the left side. You can also include subitems as shown here.  To close, click the menu link again and the toggle menu will slide back offscreen:</p>
+                     <img src="../images/toggleSubItems.png" alt="example of toggle menu open with subitems">
+                     <p>Use this code to get started:</p>
+                    <pre>
+<code>
+   &lt;div class=&quot;offScreenWrap&quot;&gt;
+        &lt;nav&gt;
+         &lt;ul id=&quot;nav&quot;&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;logo&quot;&gt;Logo&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 2&lt;/a&gt;
+         &lt;ul&gt;
+             &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Sub Item 1&lt;/a&gt;&lt;/li&gt;
+             &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Sub Item 2&lt;/a&gt;&lt;/li&gt;
+             &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Sub Item 3&lt;/a&gt;&lt;/li&gt;
+         &lt;/ul&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 3&lt;/a&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 4&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;pages/contact.html&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;&lt;i class=&quot;fa-brands fa-linkedin fa&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot; &gt;&lt;i class=&quot;fa-brands fa-youtube fa&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;&lt;i class=&quot;fa-light fa-pen-nib fa&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot; &gt;&lt;i class=&quot;fa-brands fa-wordpress-simple fa&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt; 
+         &lt;/ul&gt;
+        &lt;/nav&gt;
+   &lt;/div&gt;
+   &lt;main&gt;
+        &lt;div class=&quot;navBar&quot;&gt;
+            &lt;!-- Leave first tag below empty. It is here for functionality purposes. --&gt;
+            &lt;a href=&quot;#&quot; class=&quot;navbar_toggleBtn&quot;&gt; 
+            &lt;/a&gt;
+            &lt;a href=&quot;#&quot; class=&quot;navToggle&quot;&gt;Menu&lt;/a&gt;
+            &lt;a href=&quot;pages/contact.html&quot;&gt;Contact&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/main&gt; 
+</code>
+                    </pre>
                 </section>
                 <section class="item spanAll stylings typography">
                     <h2 class="nunito p8 linkAnchor" id = "linkToTypo">Typography</h2>
@@ -549,7 +625,7 @@
                                     </select>
                                 </div>
                             </div>
-                        <input type="submit" id="submit" value="submit" class="btnSubmit btnSubmitL btnDropShadow p5BG btnHoverP2">
+                        <input type="submit" id="submit" value="submit" class="btnSubmit btnSubmitL btnDropShadow p5BG btnHoverP2 b1 nunito bold">
                         </div>
                     </form>
                     <p>To make the form above, write the code below.</p>
@@ -798,16 +874,16 @@
             <div class="asideInner">
                 <h4 class="nunito p8">Style Categories</h4>
                 <ul>
-                    <li class="nunito"><a href="#linkToGrid">Grid</a></li>
-                    <li class="nunito"><a href="#linkToNav">Navigation</a></li>
-                    <li class="nunito"><a href="#linkToTypo">Typography</a></li>
-                    <li class="nunito"><a href="#linkToColors">Colors</a></li>
-                    <li class="nunito"><a href="#linkToButtons">Buttons</a></li>
-                    <li class="nunito"><a href="#linkToIcons">Icons</a></li>
-                    <li class="nunito"><a href="#linkToForms">Forms</a></li>
-                    <li class="nunito"><a href="#linkToTables">Table</a></li>
-                    <li class="nunito"><a href="#linkToLists">Lists</a></li>
-                    <li class="nunito"><a href="#linkToUtility">Utility Classes</a></li> 
+                    <li class="nunito"><a href="#linkToGrid" class="b5 aHoverB1">Grid</a></li>
+                    <li class="nunito"><a href="#linkToNav" class="b5 aHoverB1">Navigation</a></li>
+                    <li class="nunito"><a href="#linkToTypo" class="b5 aHoverB1">Typography</a></li>
+                    <li class="nunito"><a href="#linkToColors" class="b5 aHoverB1">Colors</a></li>
+                    <li class="nunito"><a href="#linkToButtons" class="b5 aHoverB1">Buttons</a></li>
+                    <li class="nunito"><a href="#linkToIcons" class="b5 aHoverB1">Icons</a></li>
+                    <li class="nunito"><a href="#linkToForms" class="b5 aHoverB1">Forms</a></li>
+                    <li class="nunito"><a href="#linkToTables" class="b5 aHoverB1">Table</a></li>
+                    <li class="nunito"><a href="#linkToLists" class="b5 aHoverB1">Lists</a></li>
+                    <li class="nunito"><a href="#linkToUtility" class="b5 aHoverB1">Utility Classes</a></li> 
                 </ul>
             </div>
         </aside>
