@@ -135,6 +135,18 @@ figcaption {
 }
 /* END styles for typography page */
 
+/* photo gallery modal */
+.modalNav button {
+    padding: 3px;
+    border-radius: 8px;
+}
+.pTextClose {
+    background-color: gray;
+    color: white;
+    border-radius: 20px;
+    padding-left: 12px;
+}
+
 /* input hovor */
 input[type = "submit"]:hover {
     color: rgb(0, 0, 139);

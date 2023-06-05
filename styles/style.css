@@ -1074,7 +1074,7 @@ nav { margin-top: 5rem; }
 /*********************** CALENDAR ***********************/
 /*****************************************************/
 .calContainer {
-    width: 720px;
+    width: 720px;  /* framework website values */
     padding: 6px;
     border: solid 1px #7f8fa6;
     border-radius: 10px;
@@ -1244,21 +1244,6 @@ nav { margin-top: 5rem; }
 
 /*********************** MODAL ***********************/
 /*****************************************************/
-/* apply only to modal
-body {
-    display: flex;
-    justify-content: center;
-    min-height: 100vh;
-    align-items: center;
-    background-color: #091921;
-}
-*/
-.heading {
-    color: #fff;
-    text-align: center;
-    font-size: 2em;
-    margin: 2em 0;
-}
 .images {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1273,7 +1258,7 @@ body {
 .images img:hover {
     transform: scale(0.9);
 }
-.modal {
+.modalImgBG {
     position: fixed;
     height: 100%;
     width: 100%;
@@ -1287,11 +1272,13 @@ body {
     pointer-events: none;
 }
 .modalContent {
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 80%;
+    margin-top: 130px; /* framework website values */
+    margin-left: 170px; /* framework website values */
 }
 .modalImg {
     width: 80%;
@@ -1301,17 +1288,17 @@ body {
 }
 .close {
     position: absolute;
-    top: 1em;
-    right: 1.5em;
+    top: 106px; /* framework website values */
+    right: 119px; /* framework website values */
     font-size: 1.5em;
     cursor: pointer;
 }
-.modal.appear {
+.modalImgBG.appear {
     opacity: 1;
     pointer-events: all;
 }
-.modal.appear .modalImg,
-.modal.appear .modalTxt {
+.modalImgBG.appear .modalImg,
+.modalImgBG.appear .modalTxt {
     animation: zoom 0.3s linear;
 }
 @keyframes zoom {
@@ -1622,8 +1609,21 @@ body {
     .item.spanRight3LG {
         grid-column: 4/7;
     }
+    
+    /********** modal **********/
+    .images {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+        margin: 0 1em;
+    }
+
+    .modalImg {
+        width: 75%;
+    }
 }
 /*********** calendar small/mobile ***********/
+/* framework website media query and adjusted values */
 @media (max-width: 1110px) {
     .calContainer {
         width: 335px;
