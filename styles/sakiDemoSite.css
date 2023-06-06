@@ -1,0 +1,132 @@
+/********** custom css for saki's demo **************/
+body.parallaxBg::before {
+    background-image: url(../images/sakiDemo_parallaxImage.jpg);
+}
+
+/* global styles */
+a#topButton:hover, button:hover {
+    color: rgb(255, 20, 147);
+}
+
+/* header styles */
+.bodyGrid header {
+    padding: 0;
+    text-align: center;
+    height: 100vh;
+}
+
+header h1 {
+    margin-top: 200px;
+    font-size: 3.5rem;
+    text-shadow:
+        1px 1px 1px rgb(255, 255, 224),
+        1px -1px 1px rgb(255, 20, 147),
+        -1px 1px 1px rgb(255, 20, 147),
+        -1px -1px 1px rgb(255, 20, 147),
+        0 0 22px rgb(255, 20, 147);
+}
+
+div.navbar_logo {
+    font-size: 1rem;
+}
+
+header p {
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 1rem;
+    text-shadow: 1.5px 1.5px 1px rgba(0,0,0,.5);
+}
+
+header p.place {
+    padding-bottom: 70px;
+}
+
+nav.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    background: rgba(255, 255, 255, .5);
+    margin: 0;
+}
+
+/* main styles */
+article.container {
+    margin: 8rem auto;
+    background-color: rgba(255, 255, 255, .6);
+    border-radius: 5px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-shadow:
+    1px 1px 1px rgb(255, 255, 224),
+    1px 1px 1px rgb(255, 20, 147),
+    1px -1px 1px rgb(255, 20, 147),
+    -1px 1px 1px rgb(255, 20, 147),
+    -1px -1px 1px rgb(255, 20, 147),
+    0 0 22px rgb(255, 20, 147);
+    margin-top: 2rem;
+}
+
+h3 {
+    text-shadow: 1.5px 1.5px 1px rgba(0,0,0,.5);
+}
+
+strong {
+    font-size: 2rem;
+}
+
+img {
+    width: 250px;
+    margin-top: 30px;
+    display: block;
+}
+
+#lineup li {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    list-style: none;
+    text-align: center;
+}
+
+#ticket table {
+    display: table;
+    margin-bottom: 30px;
+}
+
+#ticket button {
+    margin: .3rem;
+}
+
+.stripedTable tr:first-child {
+    display: none;
+}
+
+.stripedTable td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    padding-right: 2rem;
+}
+
+.stripedTable th, td {
+    display: block;
+}
+
+.stripedTable button {
+    font-size: 1rem;
+}
+
+@media screen and (min-width:700px) {
+    .stripedTable tr:first-child {
+        display: table-row;
+    }
+    .stripedTable th, td {
+        display: table-cell;
+    }
+    .stripedTable td:before {
+        content: "";
+    }
+}
+
