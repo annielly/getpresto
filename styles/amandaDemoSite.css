@@ -1,0 +1,108 @@
+html {
+/*    height: 100%; */
+ 
+}
+p {
+    margin: auto;
+    padding-bottom: .5em;
+    padding-top: 0;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+    width: 75%
+}
+p.lessons, p.calendar {
+    background-color: rgba(0,0,0,.3);
+    padding: 1.5rem;
+    border-radius: 5px;
+}
+body {
+/*    height: 100%;*/
+}
+.bodyGrid {
+    padding: 0;
+}
+nav {
+    background-color: rgba(0,0,0,.3);
+    margin-top:-1em;
+    margin-left: -1em;
+}
+.home {
+     
+     background-image: url("../images/maxSmithLG.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover cover;
+/*    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.375);*/
+   
+/*    height: 110vh;*/
+    
+}
+
+.pages {
+    background-image: url("../images/clarinetBG.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover cover;
+/*    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.375);*/
+/*    height: 100vh;*/
+}
+
+.logo, .hamburger, footer, .icon, .menu {
+    text-shadow: 5px 5px 5px black;
+}
+.logo{
+    font-size: 2.3rem;
+}
+.icon {
+    font-size: 1.5rem;
+}
+.menu {
+    font-size: 1.4rem;
+    text-shadow: 3px 3px 3px black;
+}
+h1 {
+    font-size: 3.5rem;
+/*    margin-bottom: 2em;*/
+    text-shadow: 5px 5px 5px black;
+}
+header {
+    padding-bottom: 0;
+}
+audio {
+    margin-top: -1.5em;
+}
+
+.homeHeading {
+    font-size: 4rem;
+    margin-top: 20rem; 
+    padding-bottom: 0;
+}
+.table {
+    width: 100%;
+    margin-bottom: 6rem;
+}
+.table th, td {
+    padding: 1rem;
+    text-align: center;
+}
+
+.calHeader button {
+     background-color: rgb(189, 183, 107);
+}
+#eventText {
+    color: black;
+    text-shadow: none;
+}
+
+legend {
+    font-size: 2rem;
+}
+div.formbg {
+    box-shadow: 5px 5px 5px black;
+    border-radius: 5px;
+}
+footer {
+    color: white;
+    background-color: rgba(0,0,0,.65);
+   
+}
