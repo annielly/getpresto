@@ -932,10 +932,7 @@ a{
     width: 12rem;
     transition: transform .5s ease-out;  
 }
- 
-div.offScreenWrap {
-   
-}
+
 .offScreenOpen main,
 .offScreenOpen .offScreenWrap {
     transform: translate(12rem);
@@ -1384,7 +1381,6 @@ nav { margin-top: 5rem; }
     }
     
     .container {
-        /* display: grid; */
         grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: minmax(120px, auto);
         grid-gap: 10px;
