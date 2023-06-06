@@ -1,3 +1,6 @@
+html {
+        scroll-behavior: smooth;
+}
 header {
     position: fixed;
     background-color: white;
@@ -15,6 +18,12 @@ header {
 
 .navbar_menu {
     padding-top: .5em;
+}
+
+a:hover {
+  color: darkorange;
+  background-color: transparent;
+  text-decoration: underline;
 }
 
 .fixedBG {
@@ -40,6 +49,24 @@ h3 {
 
 .shows h1 {
     margin-bottom: 20px;
+}
+
+.shows p {
+    font-size: 1.6em;
+}
+
+.calContainer {
+    margin-top: 30px;
+}
+
+input {
+  width: 250px;
+}
+
+.newsletter button {
+    padding: 5px;
+    color: black;
+    background-color: darkorange;
 }
 
 .bio {
