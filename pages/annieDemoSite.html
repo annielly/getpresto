@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@400;500&family=Josefin+Sans:wght@400;700&family=Josefin+Slab:wght@400;700&family=Limelight&family=Lora:wght@400;700&family=Megrim&family=Monsieur+La+Doulaise&family=Nunito:wght@400;900&family=Open+Sans:wght@400;800&family=Playfair+Display:wght@400;900&family=Rock+Salt&family=Sacramento&family=Shrikhand&family=Slackey&family=Special+Elite&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <title>Annie's Demo</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/annieDemoSite.css">
+    
+</head>
+<body class="parallaxBg">
+<div class = “bodyGrid noAside”>
+        <header>
+            <nav class="navbar">
+                <div class="navbar_logo">
+                    <a href="#" class="megrim bold">Lady Rocker</a>
+                </div>
+                <ul class="navbar_menu megrim">
+                   <li><a href="#">Shows</a></li>
+                   <li><a href="#">Music</a></li>
+                   <li><a href="#">Bio</a></li>
+                   <li><a href="#">Photos</a></li>
+                </ul>
+
+        <!--HAMBURGER ICON-->
+        <a href="#" class="navbar_toggleBtn">
+            <i class="fa-solid fa-bars">
+            </i>
+        </a>
+            </nav>
+        </header>
+        <main>
+            <div class="fixedBG"></div>
+            <div class="container">
+                <section class="shows item spanAll scrollFadeIn">
+                     <h1>Upcoming shows, jams, and releases</h1>
+                         <div class="calContainer megrim">
+                               <div class="calHeader">
+                               <div id="month"></div>
+                               <div>
+                                  <button id="btnBack"><i class="fa fa-angle-left"></i></button>
+                                  <button id="btnNext"><i class="fa fa-angle-right"></i></button>
+                               </div>
+                               </div>
+                               <div class="weekdays">
+                                 <div>Sun</div>
+                                 <div>Mon</div>
+                                 <div>Tue</div>
+                                 <div>Wed</div>
+                                 <div>Thu</div>
+                                 <div>Fri</div>
+                                 <div>Sat</div>
+                               </div>
+                               <div id="calendar"></div>
+                        </div>
+                        <div id="calModal"></div>
+                        <div id="addEvent">
+                          <h2>Add Event</h2>
+                          <input type="text" id="txtTitle" placeholder="Event Title" />
+                          <button id="btnSave">Save</button>
+                          <button class="btnClose">Close</button>
+                        </div>
+                        <div id="viewEvent">
+                          <h2>Event</h2>
+                          <p id="eventText">This is Sample Event</p>
+                          <button id="btnDelete">Delete</button>
+                          <button class="btnClose">Close</button>
+                        </div>
+                        <p>Sign up for updates and a new song: <input type="email" id="email" name="email" placeholder="enter email" required> <button class="josefinSlab"> Sign me up </button></p>
+                </section>
+                <section class="music item spanAll scrollFadeIn videos">
+                    <h1>The music</h1>
+                    <div class="vid vid">
+                     <div class="video">
+                         <iframe width="560" height="315" src="https://www.youtube.com/embed/i-_1Os7hVDw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                     </div>
+                     <h3>Milestiae voluptas qait veniam laborum.</h3>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae accusamus distinctio, aliquam eligendi adipisci beatae ratione quia dolorem eaque ullam minima harum laudantium quibusdam incidunt eos velit? Laboriosam, fugiat, quidem.</p>
+                  </div>
+                  <div class="vid vid2">
+                     <div class="video">
+                         <iframe width="560" height="315" src="https://www.youtube.com/embed/UJund2pU4uA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                     </div>
+                     <h3>Yoluptatum susci recusandae cupiditate.</h3>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit ratione possimus nemo rerum, distinctio, reprehenderit, ea neque voluptas minima repellat odit nam excepturi ullam non nulla iusto expedita. Suscipit, maiores?</p>
+                  </div>
+                </section>
+                <section class="bio item spanAll scrollFadeIn">
+                <h1>What's up</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officia quis fugit, dolores facilis eum nemo numquam consequuntur earum, praesentium doloremque, voluptate? Doloribus, porro perspiciatis qui, ex ipsum soluta iure.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officia quis fugit, dolores facilis eum nemo numquam consequuntur earum, praesentium doloremque, voluptate? Doloribus, porro perspiciatis qui, ex ipsum soluta iure.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officia quis fugit, dolores facilis eum nemo numquam consequuntur earum, praesentium doloremque, voluptate? Doloribus, porro perspiciatis qui, ex ipsum soluta iure.<br><br>Numquam consequuntur earum, praesentium doloremque, voluptate? Doloribus, porro perspiciatis qui, ex ipsum soluta iure.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officia quis fugit, dolores facilis eum nemo numquam consequuntur earum, praesentium doloremque, voluptate? Doloribus, porro perspiciatis qui, ex pure.</p>
+                </section>
+                <section class="photos item spanAll scrollFadeIn">
+                    <h1>The latest. . . </h1>
+                    <br>
+                       <div class="containerModal">
+                          <div class="images">
+                             <picture>
+                                <source media="(min-width: 600px)" srcset="
+                                ../images/001alejandro-ortiz-oLPo2Rt4mzs-unsplashsmall.jpeg 600w,
+                                ../images/001alejandro-ortiz-oLPo2Rt4mzs-unsplashmed.jpeg 900w,
+                                ../images/001alejandro-ortiz-oLPo2Rt4mzs-unsplashlarge.jpeg 1200w">
+                                <img src="../images/001alejandro-ortiz-oLPo2Rt4mzs-unsplashlarge.jpeg" alt="image1 description">
+                             </picture>
+
+                             <picture>
+                                <source media="(min-width:600px)" srcset="
+                                ../images/002danny-howe-bn-D2bCvpik-unsplashsmall.jpeg 600w,
+                                ../images/002danny-howe-bn-D2bCvpik-unsplashmed.jpeg 900w,
+                                ../images/002danny-howe-bn-D2bCvpik-unsplashlarge.jpeg 1200w">
+                                <img src="../images/002danny-howe-bn-D2bCvpik-unsplashlarge.jpeg" alt="image2 description">
+                             </picture>
+
+                             <picture>
+                                <source media="(min-width:600px)" srcset="
+                                ../images/003felix-koutchinski-FOro6jhMw30-unsplashsmall.jpeg 600w,
+                                ../images/003felix-koutchinski-FOro6jhMw30-unsplashmed.jpeg 900w,
+                                ../images/003felix-koutchinski-FOro6jhMw30-unsplashlarge.jpeg 1200w">
+                                <img src="../images/003felix-koutchinski-FOro6jhMw30-unsplashlarge.jpeg"
+                                   alt="image3 description">
+                             </picture>
+
+                             <picture>
+                                <source media="(min-width:600px)" srcset="
+                                ../images/004hosein-zanbori-wvbOWcIDuYg-unsplashsmall.jpeg 600w,
+                                ../images/004hosein-zanbori-wvbOWcIDuYg-unsplashmed.jpeg 900w,
+                                ../images/004hosein-zanbori-wvbOWcIDuYg-unsplashlarge.jpeg 1200w">
+                                <img src="../images/004hosein-zanbori-wvbOWcIDuYg-unsplashlarge.jpeg" alt="image4 description">
+                             </picture>
+
+                             <picture>
+                                <source media="(min-width:600px)" srcset="
+                                ../images/005jamakassi-wejxKZ-9IZg-unsplashsmall.jpeg 600w,
+                                ../images/005jamakassi-wejxKZ-9IZg-unsplashmed.jpeg 900w,
+                                ../images/005jamakassi-wejxKZ-9IZg-unsplashlarge.jpeg 1200w">
+                                <img src="../images/005jamakassi-wejxKZ-9IZg-unsplashlarge.jpeg" alt="image5 description">
+                             </picture>
+
+                             <picture>
+                                <source media="(min-width:600px)" srcset="
+                                ../images/010wes-hicks-MEL-jJnm7RQ-unsplashsmall.jpeg 600w,
+                                ../images/010wes-hicks-MEL-jJnm7RQ-unsplashmed.jpeg 900w,
+                                ../images/010wes-hicks-MEL-jJnm7RQ-unsplashlarge.jpeg 1200w">
+                                <img src="../images/010wes-hicks-MEL-jJnm7RQ-unsplashlarge.jpeg" alt="image10 description">
+                             </picture>
+                        </div>
+                          <div class="modalImgBG">
+                             <span class="close"><i class="fas fa-times"></i></span>
+                             <div class="modalContent">
+                                <img src="" alt="" class="modalImg">
+                                <span class="modalTxt"></span>
+                                <div class="modalNav">
+                                   <button type="button" class="prevBtn">Prev</button>
+                                   <button type="button" class="nextBtn">Next</button>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <i class="fa-brands fa-spotify"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-solid fa-envelope"></i>
+            <p class="megrim">&copy; Lady Rocker</p>
+        </footer>
+</div>
+    <script src="../scripts/scripts.js"></script>
+    <script src="../scripts/calendar.js"></script>
+    <script src="../scripts/modal.js"></script>
+    <script src="../scripts/scrollIn.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+header {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 10;
+}
+.navbar_logo {
+    width: auto;
+    padding: 0 3em 0;
+}
+
+.navbar_logo a {
+    font-size: 2em;
+}
+
+.navbar_menu {
+    padding-top: .5em;
+}
+
+.fixedBG {
+    background-image: url(../images/parallaxImage.jpeg);
+    min-height: 900px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1, p {
+    font-family: josefinSlab;
+}
+
+h3 {
+    font-family: megrim;
+}
+
+.shows {
+    margin-top: 50px;
+}
+
+.shows h1 {
+    margin-bottom: 20px;
+}
+
+.bio {
+    margin: 150px 0;
+}
+
+.bio p {
+    font-size: 1.5em;
+}
+
+.photos {
+    margin-bottom: 270px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    height: 5em;
+    padding-top: 1em;
+}
+footer i {
+    font-size: 1.5em;
+    margin-left: .5em;
+}
+footer p {
+    margin-top: -30px;
+}
