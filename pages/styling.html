@@ -43,7 +43,7 @@
         </header>
         <main>
             <div class="container width100">
-                <section class="item spanAll stylings">
+                <section class="item spanAll stylings gridPart">
                     <h2 class="bold p8 linkAnchor" id = "linkToGrid">Grid</h2>
                     <p>We have 2 types of grid layouts. One is a grid layout for an entire page and the other is a grid container you can use everywhere you want.</p>
                     <h3 class="bold p8">Grid for an entire page</h3>
@@ -123,7 +123,7 @@
 &lt;/body&gt;</code>
                     </pre>
                 </section>
-                <section class="item spanAll stylings">
+                <section class="item spanAll stylings" id="navStyles">
                     <h2 class="nunito p8 linkAnchor" id = "linkToNav">Navigation</h2>
                      <p>There are two types of navigation styles to choose from.  The first is a horizontal navbar that collapses to a hamburger menu at small screen.  The second is a toggle menu that remains offscreen until the link is clicked.</p>
                     <h3 class="nunito p8">Option 1 - Horizontal Nav with Hamburger Menu:</h3>
@@ -184,7 +184,8 @@
          &lt;/ul&gt;
          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 3&lt;/a&gt;
          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 4&lt;/a&gt;&lt;/li&gt;
-         &lt;li&gt;&lt;a href=&quot;pages/contact.html&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;pages/contact.html&quot;&gt;
+         Contact&lt;/a&gt;&lt;/li&gt;
          &lt;li&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;&lt;i class=&quot;fa-brands fa-linkedin fa&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
          &lt;li&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot; &gt;&lt;i class=&quot;fa-brands fa-youtube fa&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
          &lt;li&gt;&lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;&lt;i class=&quot;fa-light fa-pen-nib fa&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
@@ -198,7 +199,8 @@
             &lt;a href=&quot;#&quot; class=&quot;navbar_toggleBtn&quot;&gt; 
             &lt;/a&gt;
             &lt;a href=&quot;#&quot; class=&quot;navToggle&quot;&gt;Menu&lt;/a&gt;
-            &lt;a href=&quot;pages/contact.html&quot;&gt;Contact&lt;/a&gt;
+            &lt;a href=&quot;pages/contact.html&quot;&gt;
+            Contact&lt;/a&gt;
         &lt;/div&gt;
     &lt;/main&gt; 
 </code>
@@ -206,8 +208,8 @@
                 </section>
                 <section class="item spanAll stylings typography">
                     <h2 class="nunito p8 linkAnchor" id = "linkToTypo">Typography</h2>
-                    <section class="headings">
-                        <h3 class="bold p8">Headings <code>&lt;h1&gt;</code> - <code>&lt;h6&gt;</code>:</h3>
+                    <!-- <section class="headings"> -->
+                        <h3 class="bold p8">Headings &lt;h1&gt; - &lt;h6&gt;:</h3>
                         <p>All headings have been slightly sized up from most default sizings.  </p>
                         <h1>Heading 1</h1>
                         <h2 class="h2">Heading 2</h2>
@@ -215,9 +217,9 @@
                         <h4>Heading 4</h4>
                         <h5>Heading 5</h5>
                         <h6>Heading 6</h6>  
-                    </section>
-                    <br>
-                    <section class="inlineText">
+                    <!-- </section> -->
+                    <!-- <br> -->
+                    <!-- <section class="inlineText"> -->
                         <h3 class="bold p8">Inline Text:</h3>
                         <p class="italic"><span class="italic"></span>This is an example of italicized text. </p>
                         <p>--Use <code>class="italic"</code></p>
@@ -237,24 +239,22 @@
                         <p>--Use <code>class="capitalize"</code></p>
                         <p class="lowercase">This is an example of what it will looklike using the lowercase class.</p>
                         <p>--Use <code>class="lowercase"</code></p>
-                        <h3 class="bold p8"> Hover and Active States for Links <code>&lt;a&gt;</code>:</h3>
+                        <h3 class="bold p8"> Hover and Active States for Links &lt;a&gt;:</h3>
                         <p>--Use <code>class="aHoverN1"</code> for a hover color of Neutral 1. Note: use classes <code>aHoverN2, aHoverP1, aHoverP2, aHoverB1, or aHoverB2</code> for more options.  The suffixes on each class (P1, for example)coorespond to the color palette classes. </p>
                         <p>--Use <code>class="aActiveB8</code>for an active color of Bold 8.  Note: use classes <code>aActiveN5, aActiveN8, aActiveP3, aActiveP5, or aActiveB6</code> for more options.  The suffixes on each class (P5, for example)coorespond to the color palette classes.</p>
-                        
-                        
                         <h3 class="bold p8">Addresses:</h3>
-                        <p>--For email, use <code>href="mailto:example@address.com"</code>within an <code>&lt;a&gt;</code>tag.</p>
-                        <p>--For phone number, use <code>href="tel:+11234567890"</code>within an <code>&lt;a&gt;</code>tag.</p>
+                        <p>--For email, use<br><code>href=<br>"mailto:example@ex.com"</code><br>within an <code>&lt;a&gt;</code>tag.</p>
+                        <p>--For phone number, use<br><code>href=<br>"tel:+11234567890"</code><br>within an <code>&lt;a&gt;</code>tag.</p>
                         <address>
                          <a href="mailto:example@address.com">example@address.com</a><br>
                          <a href="tel:+11234567890">(123) 456-7890</a>
-                    </address>
-                    </section>
-                    <h3 class="bold p8">Body Copy <code>&lt;p&gt;</code>:</h3>
+                        </address>
+                    <!-- </section> -->
+                    <h3 class="bold p8">Body Copy &lt;p&gt;:</h3>
                     <p>This is an example of what the Body Copy will look like.  By default, it is centered to the page with slightly larger text sizing and line height than what is usually expected as the default.  This helps to enhance readability throughout all devices. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quisquam ipsum hic facere, magni sit beatae eum optio porro cum dignissimos praesentium quaerat aliquid iusto deleniti, impedit quam nemo dolor.</p>
-                                     <h3 class="bold p8">Blockquotes</h3>
-                     <p>--Use <code>class="blockquote cite="#"</code>within<code>&lt;blockquote&gt;</code>tag.</p>
-                     <p>--Use <code>&lt;span&gt;</code>tag within your blockquote to cite or attribute your quote. </p>
+                    <h3 class="bold p8">Blockquotes</h3>
+                    <p>--Use <code>class="blockquote cite="#"</code><br>within<code>&lt;blockquote&gt;</code>tag.</p>
+                    <p>--Use <code>&lt;span&gt;</code>tag within your blockquote to cite or attribute your quote. </p>
                     <blockquote class="blockquote" cite="#">Here is an example of what a blockquote would look like. It is stylized to differentiate it from regular Body Text and has the option to cite and/or attribute the quote.
                     <span>Steve Jobs</span>
                     </blockquote>
@@ -262,74 +262,70 @@
                     <span>Steve Jobs</span>
                     </blockquote>
                     <h3 class="bold p8">Typefaces:</h3>
-                    <article class="birthstoneBounce">
+                    <article class="birthstoneBounce typefaces">
         <h3>Birtstone Bounce</h3>
         <p><code>class="birthstoneBounce"</code></p>
         
     </article>
-    <article class="limelight">
+    <article class="limelight typefaces">
         <h3>Limelight</h3>
        <p><code>class="limelight"</code></p>
      </article>
-    <article class="megrim">
+    <article class="megrim typefaces">
         <h3>Megrim</h3>
        <p><code>class="megrim"</code></p>
     </article>
-     <article class="monsieurLaDoulaise">
+     <article class="monsieurLaDoulaise typefaces">
         <h3>Monsieur La Doulaise</h3>
        <p><code>class="monsieurLaDoulaise"</code></p>
     </article>
-     <article class="rockSalt">
+     <article class="rockSalt typefaces">
         <h3>Rock Salt</h3>
        <p><code>class="rockSalt"</code></p>
     </article>
-     <article class="sacramento">
+     <article class="sacramento typefaces">
         <h3>Sacramento</h3>
        <p><code>class="sacramento"</code></p>
     </article>
-     <article class="shrikhand">
+     <article class="shrikhand typefaces">
         <h3>Shrikhand</h3>
        <p><code>class="shrikhand"</code></p>
     </article>
-     <article class="slackey">
+     <article class="slackey typefaces">
         <h3>Slackey</h3>
        <p><code>class="slackey"</code></p>
     </article>
-     <article class="specialElite">
+     <article class="specialElite typefaces">
         <h3>Special Elite</h3>
        <p><code>class="specialElite"</code></p>
     </article>
-     <article class="unifrakturMaguntia">
+     <article class="unifrakturMaguntia typefaces">
         <h3>Unifraktur Maguntia</h3>
        <p><code>class="unifrakturMaguntia"</code></p>
     </article>
-    
-
-    
         <h3 class="bold p8">Body Typefaces:</h3>
-        
-         <article class="openSans">
+         <article class="openSans typefaces">
         <h3>Open Sans</h3>
        <p><code>class="openSans"</code></p>
     </article>
-     <article class="nunito">
+     <article class="nunito typefaces">
         <h3>Nunito</h3>
        <p><code>class="nunito"</code></p>
     </article>
-     <article class="josefinSans">
+     <article class="josefinSans typefaces">
         <h3>Josefin Sans</h3>
        <p><code>class="josefinSans"</code></p>
     </article>
-     <article class="josefinSlab">
+     <article class="josefinSlab typefaces">
         <h3>Josefin Slab</h3>
        <p><code>class="josefinSlab"</code></p>
     </article>
-     <article class="lora">
+     <article class="lora typefaces">
         <h3>Lora</h3>
        <p><code>class="lora"</code></p>
     </article>
      
-     <article class="playfairDisplay">
+     <article class="playfairDisplay typefaces">
         <h3>Playfair Display</h3>
        <p><code>class="playfairDisplay"</code></p>
     </article>
@@ -470,8 +466,8 @@
                 <section class="item spanAll stylings buttons">
                     <h2 class="nunito p8 linkAnchor" id = "linkToButtons">Buttons</h2>
                     <h3 class="bold p8">Button Sizing:</h3>
-                    <section class="buttons">
-                        <p> <button class="btnXS" type="button">Extra Small</button> --Use <code>class="btnXS" type="button"</code>within a <code>&lt;button&gt;</code>tag.</p>
+                    <!-- <section class="buttons"> -->
+                        <p> <button class="btnXS" type="button">Extra Small</button>--Use <code>class="btnXS" type="button"</code>within a <code>&lt;button&gt;</code>tag.</p>
                         <p><button class="btnS" type="button">Small Button</button>--Use <code>class="btnS" type="button"</code>within a <code>&lt;button&gt;</code>tag.</p>
                         <p> <button class="btnNormal" type="button">Normal Button</button>--Use <code>class="btnNormal" type="button"</code>within a <code>&lt;button&gt;</code>tag.</p>
                         <p><button class="btnL" type="button">Large Button</button>--Use <code>class="btnL" type="button"</code>within a <code>&lt;button&gt;</code>tag.</p>
@@ -486,7 +482,7 @@
                         <p><button class="btnActiveB8 btnL" type="button">Active Color</button>--Use <code>class="btnActiveB8"</code>within an <code>&lt;button&gt;</code>tag to get the effect above. Note: use classes <code>btnActiveN5, btnActiveN8, btnActiveP3, btnActiveP5, or btnActive B6</code> for more options.  The suffixes on each class (P1, for example)coorespond to the color palette classes below.</p>
                         <h3 class="bold p8">Examples:</h3>
                         <button class="btnHoverN2 slackey n8BG btnL btnDropShadow" type="button">Example 1</button><button class="btnHoverB2 josefinSans btnNormal btnActiveB6 b1BG p7 btnDropShadow">Example 2</button>
-                    </section>
+                    <!-- </section> -->
                 </section>
                 <section class="item spanAll stylings">
                     <h2 class="nunito p8 linkAnchor" id = "linkToIcons">Icons</h2>

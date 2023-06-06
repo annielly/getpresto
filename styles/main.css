@@ -48,6 +48,11 @@ span.brand {
     font-size: 2rem;
 }
 
+.container .item {
+    flex-wrap: wrap;
+    min-width: 0;
+}
+
 .spanSM {
     font-size: 1.2rem;
 }
@@ -88,16 +93,31 @@ pre {
 
 pre > code {
     background-color: white;
-    font-size: .8rem;
+    font-size: .7rem;
+}
+
+code {
+    padding: 0px;
+    font-size: 1rem;
 }
 /* END styles for sample code area */
+.gridPart table {
+    font-size: .8rem;
+}
+
+.gridPart table.stripedTable {
+    width: 100%;
+}
+/* styles for grid page */
+
+/* END styles for grid page */
 
 /* styles for typography page */
 button.btnXS, button.btnS, button.btnNormal, button.btnL, input.btnReset, input.btnSubmit, button.btnDropShadow {
     margin: .5em .5em 0 0;
   
 }
-.buttons p {
+/* .buttons p {
     padding: .5em;
     line-height: 2em;
 }
@@ -110,12 +130,22 @@ button.btnXS, button.btnS, button.btnNormal, button.btnL, input.btnReset, input.
     text-align: left;
     padding-left: 2em;
     padding-top: 2em;
-}
+} */
 
 .typography header {
     text-align: center;
 }
+.typefaces code {
+    font-size: .7rem;
+}
+
 /* END styles for typography page */
+
+/* styles for nav page */
+#navStyles img {
+    max-width: 200px;
+}
+/* END styles for nav page */
 
 /* style for photo filter page */
 #compoPagePhotoFilters .item {
@@ -133,7 +163,7 @@ button.btnXS, button.btnS, button.btnNormal, button.btnL, input.btnReset, input.
 figcaption {
     text-align: center;
 }
-/* END styles for typography page */
+/* END styles for photo filter page */
 
 /* calendar table */
 .calHeader #month {
@@ -220,4 +250,21 @@ aside li {
         align-items: center;
         font-size: 1.2rem;
     }
+
+    #navStyles img {
+        max-width: 100%;
+    }
+    
+    .gridPart table {
+        font-size: 1rem;
+    }
+
+    .gridPart table.stripedTable {
+        width: 80%;
+        margin: auto;
+    }
+    .typefaces code {
+        font-size: 1rem;
+    }
+    
 }
