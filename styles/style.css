@@ -1432,6 +1432,10 @@ nav { margin-top: 5rem; }
     .modalImg {
         width: 95%;
     }
+    .close {
+    top: 113px;
+    right: -10px;
+    }
 }
 
 /*MEDIA QUERY 725px*/
@@ -1556,6 +1560,11 @@ nav { margin-top: 5rem; }
     .modalImg {
         width: 90%;
     }
+    .close {
+    top: 114px;
+    right: 10px;
+    }
+
 }
 
 @media screen and (min-width:1200px) {
