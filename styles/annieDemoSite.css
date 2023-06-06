@@ -1,5 +1,5 @@
 html {
-        scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 header {
     position: fixed;
@@ -44,11 +44,19 @@ h3 {
 }
 
 .shows {
-    margin-top: 50px;
+    scroll-margin-top: 40px;
+}
+
+.music {
+    scroll-margin-top: 60px;
+}
+
+.bio {
+    scroll-margin-top: 220px;
 }
 
 .shows h1 {
-    margin-bottom: 20px;
+    margin-top: 70px;
 }
 
 .shows p {
@@ -56,9 +64,13 @@ h3 {
 }
 
 .calContainer {
-    margin-top: 30px;
+    margin-top: 25px;
+    margin-bottom: -40px;
 }
 
+.newsletter {
+    padding-left: 2.2em;
+}
 input {
   width: 250px;
 }
