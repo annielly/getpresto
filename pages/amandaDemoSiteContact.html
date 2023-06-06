@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@400;500&family=Josefin+Sans:wght@400;700&family=Josefin+Slab:wght@400;700&family=Limelight&family=Lora:wght@400;700&family=Megrim&family=Monsieur+La+Doulaise&family=Nunito:wght@400;900&family=Open+Sans:wght@400;800&family=Playfair+Display:wght@400;900&family=Rock+Salt&family=Sacramento&family=Shrikhand&family=Slackey&family=Special+Elite&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <title>Contact|Max Smith, clarinet</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/amandaDemoSite.css">
+    
+</head>
+    <body class="pages">
+    <div class="bodyGrid noAside">
+        <header>
+            <nav class="navbar">
+                <div class="navbar_logo">
+                    <!--LOGO IMAGE-->
+                  <a class="logo limelight n2 aHoverN1" href="../pages/amandaDemoSiteHome.html">MS</a>
+                </div>
+                <ul class="navbar_menu ">
+                    <li><a class="menu n2 josefinSlab aHoverN1" href="../pages/amandaDemoSiteHome.html">home</a></li>
+                    <li><a class="menu n2 josefinSlab aHoverN1" href="../pages/amandaDemoSiteLessons.html">lessons</a></li>
+                    <li><a class="menu n2 josefinSlab aHoverN1" href="../pages/amandaDemoSiteCalendar.html"> calendar</a></li>
+                    <li><a class="menu n2 josefinSlab aHoverN1" href="../pages/amandaDemoSiteContact.html">contact</a></li>
+                      <li><a class="menu n2 josefinSlab aHoverN1" href="../index.html">presto!</a></li>
+                </ul>
+                <ul class="navbar_icons">
+                    <li><a href="#"><i class="fa-brands fa-facebook icon n2 aHoverN1"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram icon n2 aHoverN1"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin icon n2 aHoverN1"></i></a></li> 
+                    <li><a href="#"><i class="fa-brands fa-youtube icon n2 aHoverN1"></i></a></li>
+                </ul>
+                <!--HAMBURGER ICON-->
+                <a href="#" class="navbar_toggleBtn">
+                    <i class="fa-solid fa-bars hamburger n2"></i>
+                </a>
+            </nav>
+        </header>
+        <main>
+            <section>
+               <form  action="#" method="post">
+            <div class="formbg formBgColor">
+            <fieldset>
+            <legend class="n2 limelight">contact</legend>
+
+            <div>
+                <label for="firstName">Your Name*</label>
+                <input type="text" id="firstName" name="firstName"  placeholder="First name, Last name" required>
+            </div>
+
+            <div>
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" placeholder="abc@abc.com" required>
+            </div>
+            <div>
+                <label for="phone">Phone number</label>
+                <input type="tel" id="phone" name="phone" placeholder="1231231234">
+            </div>
+            <div class="formSpanGrid">
+                <label for="textMsg">Your Message</label>
+                <textarea name="textMsg" id="textMsg" class="textareaSm" placeholder="Write your message here"></textarea>
+            </div>
+             <div class="formDropDownLists">
+                <label for="ddLists">What level player are you?</label>
+                <select name="ddLists" id="ddLists">
+                    <option value="option1" selected>Beginner</option>
+                    <option value="option2">Intermediate</option>
+                    <option value="option3">Advanced</option>
+                    <option value="option4">Don't know</option>
+                </select>
+            </div>
+
+            <input type="submit" id="submit" value="submit" class="btnSubmit btnSubmitL btnDropShadow n2BG btnHoverN1">
+            </fieldset>
+                   </div>
+                </form>
+            </section>
+    
+        </main>
+        <footer class="josefinSlab">
+         &copy; 2023 | maxsmith.com
+        </footer>
+    </div>
+    <script src="../scripts/scripts.js"></script>
+    <script src="../scripts/calendar.js"></script>
+    <script src="../scripts/modal.js"></script>
+    <script src="../scripts/scrollIn.js"></script>
+</body>
+</html>
