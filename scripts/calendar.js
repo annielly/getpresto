@@ -4,7 +4,7 @@ const holidays = [
     holiday: "New Year's Day",
   },
   {
-    hdate: "06-17-2023",
+    hdate: "17-06-2023",
     holiday: "JAM SESH",
   },
   {

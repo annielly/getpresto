@@ -1087,7 +1087,6 @@ nav { margin-top: 5rem; }
   }
   
   .calHeader #month {
-    color: #706fd3;
     font-size: 30px;
     font-weight: 600;
   }
@@ -1099,18 +1098,12 @@ nav { margin-top: 5rem; }
     outline: none;
     padding: 5px;
     border-radius: 3px;
-    color: white;
   }
-  
-  .calHeader button {
-    background-color: #706fd3;
-  }
+
   .weekdays {
     width: 100%;
     display: flex;
-    background-color: #2f3640;
     font-size: 17px;
-    color: #fff;
     font-weight: 500;
     border-radius: 4px;
   }
@@ -1142,17 +1135,7 @@ nav { margin-top: 5rem; }
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
-  .day:hover {
-    background-color: rgba(112, 111, 211, 0.1);
-    color: #706fd3;
-  }
-  
-  #currentDay {
-    background-color: #706fd3;
-    color: #fff;
-  }
-  
+  }  
   .event {
     font-size: 10px;
     padding: 3px;
@@ -1161,11 +1144,6 @@ nav { margin-top: 5rem; }
     border-radius: 5px;
     max-height: 55px;
     overflow: hidden;
-  }
-  
-  .event.holiday {
-    background-color: rgb(241, 212, 189);
-    color: #3d3d3d;
   }
   
   .plain {
@@ -1215,15 +1193,11 @@ nav { margin-top: 5rem; }
   }
   
   #btnSave {
-    background-color: #706fd3;
-    color: #fff;
     padding: 2px;
     border-radius: 4px;
   }
   
   .btnClose {
-    background-color: #2f3542;
-    color: #fff;
     padding: 2px;
     border-radius: 4px;
   }
