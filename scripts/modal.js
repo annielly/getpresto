@@ -22,7 +22,6 @@
                     } if (prev < 0 ) {
                         prev = images.length - 1;
                     }
-// Above block line 59-63 loops through photos infinitely with arrow keys but does not apply function to prev/next buttons
                     if(e.keyCode === 37) {
                         modalImg.src = images[prev].src;
                         modalTxt.innerHTML = images[prev].alt;
